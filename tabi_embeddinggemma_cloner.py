@@ -2,9 +2,11 @@ import os
 import time
 import json
 import torch
+import shutil
+
 from dotenv import load_dotenv
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import turkish_tokenizer as tt
+from sentence_transformers import SentenceTransformer
 
 load_dotenv()
 HF_TOKEN = os.environ.get("HF_TOKEN")
@@ -13,7 +15,7 @@ org_tokenizer = AutoTokenizer.from_pretrained("google/embeddinggemma-300m", toke
 org_model = AutoModelForCausalLM.from_pretrained("google/embeddinggemma-300m", token=HF_TOKEN)
 org_model = org_model.to(torch.bfloat16)
 
-target_tokenizer = tt.TurkishTokenizer()
+target_tokenizer = AutoTokenizer.from_pretrained("alibayram/TabiBERT-tokenizer-32k", token=HF_TOKEN, use_fast=False)
 
 source_vocab = org_tokenizer.get_vocab()
 target_vocab = target_tokenizer.get_vocab()
@@ -23,7 +25,7 @@ direct_matches = 0
 tokenized_matches = 0
 
 for token_str, target_id in target_vocab.items():
-    token_str = token_str.replace(" ", "▁")
+    token_str = token_str.replace("Ġ", "▁")
     if token_str in source_vocab:
         # Direct match - use source token ID directly
         token_id_map[target_id] = [source_vocab[token_str]]
@@ -64,4 +66,21 @@ for i in range(target_tokenizer.vocab_size):
 if errors:
     print(f"   ⚠️ {len(errors)} tokens could not be mapped (initialized with mean)")
 
-org_model.save_pretrained("gemma3_cloned")
+
+model = SentenceTransformer("google/embeddinggemma-300m")
+model = model.to(torch.bfloat16)
+
+model.save_pretrained("tabi_cloned")
+
+# override the model.safetensors file with the new embeddings
+org_model.save_pretrained("tabi_cloned")
+# override the tokenizer files with the new tokenizer
+target_tokenizer.save_pretrained("tabi_cloned")
+
+model = SentenceTransformer("tabi_cloned")
+model = model.to(torch.bfloat16)
+
+model.push_to_hub("alibayram/tabi-downstream-task-embeddinggemma", token=HF_TOKEN, exist_ok=True)
+
+# remove the cloned folder
+shutil.rmtree("tabi_cloned")
