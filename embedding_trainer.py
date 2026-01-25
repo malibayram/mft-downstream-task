@@ -31,6 +31,9 @@ class EmbeddingTrainerConfig:
     weight_decay: float = 0.01
     max_grad_norm: float = 1.0
 
+    # Limit training steps (optional, for debugging/warmup)
+    max_steps: int | None = None
+
     # Loss
     loss_type: Literal["mse", "cosine"] = "mse"
 
@@ -267,7 +270,7 @@ class EmbeddingDistillationTrainer:
                 progress.set_postfix({"loss": f"{loss.item():.4f}"})
 
                 if (
-                    self.global_step <= 20
+                    self.global_step <= 5
                     or self.global_step % self.config.logging_steps == 0
                 ):
                     avg_loss = epoch_loss / num_batches
@@ -286,10 +289,13 @@ class EmbeddingDistillationTrainer:
                             step=self.global_step,
                         )
 
+                if self.config.max_steps and self.global_step >= self.config.max_steps:
+                    break
+
                 if self.global_step % self.config.save_steps == 0:
-                    self.save_model(
+                    """self.save_model(
                         f"{self.config.output_dir}/checkpoint-{self.global_step}"
-                    )
+                    )"""
                     if self.config.push_to_hub and self.config.hub_model_id:
                         logger.info(f"Pushing checkpoint {self.global_step} to hub...")
                         self.push_to_hub()

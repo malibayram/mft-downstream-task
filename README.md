@@ -34,6 +34,21 @@ All models use the same architecture with **131M parameters** (131,420,928 param
 
 > **Note:** Both EmbeddingGemma (originally 262K vocab → 300M params) and EmbeddingMagibu (originally 131K vocab → 200M params) are resized to 32K vocab, resulting in identical parameter counts. The extra ~5M params come from Dense projection layers in the SentenceTransformer.
 
+### 📂 Training Dataset
+
+This experiment uses **`alibayram/cosmos-corpus-encoded`**, a pre-processed dataset optimized for distillation.
+
+- **Link**: [HuggingFace Dataset](https://huggingface.co/datasets/alibayram/cosmos-corpus-encoded)
+- **Source**: Cosmos Corpus (High-quality Turkish text)
+- **Sequence Limit**: 2048 Tokens
+- **Columns**:
+  - `text`: Original raw text.
+  - `mft_input_ids`: Pre-computed MFT tokenizer sequences.
+  - `tabi_input_ids`: Pre-computed TabiBERT tokenizer sequences.
+  - `teacher_embedding_final`: Knowledge distillation targets (Teacher embeddings).
+
+All samples are pre-filtered to ensure length compliance for both tokenizers, eliminating runtime tokenization overhead.
+
 ## 🔤 MFT Tokenizer
 
 Traditional BPE tokenizers split Turkish words arbitrarily, losing morphological information:

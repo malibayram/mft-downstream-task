@@ -44,11 +44,15 @@ DATASET_ID = "alibayram/cosmos-corpus-encoded"
 
 # Models configuration
 MODELS = [
-    # MFT Models (Costomized Tokenizer)
     {
         "name": "mft-embeddinggemma",
         "model_id": "alibayram/mft-downstream-task-embeddinggemma",
         "input_ids_column": "mft_input_ids",
+    },
+    {
+        "name": "tabi-embeddinggemma",
+        "model_id": "alibayram/tabi-downstream-task-embeddinggemma",
+        "input_ids_column": "tabi_input_ids",
     },
     {
         "name": "mft-embeddingmagibu",
@@ -56,20 +60,14 @@ MODELS = [
         "input_ids_column": "mft_input_ids",
     },
     {
-        "name": "mft-random-init",
-        "model_id": "alibayram/mft-random-init",
-        "input_ids_column": "mft_input_ids",
-    },
-    # TabiBERT Models (BERT Tokenizer)
-    {
-        "name": "tabi-embeddinggemma",
-        "model_id": "alibayram/tabi-downstream-task-embeddinggemma",
-        "input_ids_column": "tabi_input_ids",
-    },
-    {
         "name": "tabi-embeddingmagibu",
         "model_id": "alibayram/tabi-downstream-task-embeddingmagibu",
         "input_ids_column": "tabi_input_ids",
+    },
+    {
+        "name": "mft-random-init",
+        "model_id": "alibayram/mft-random-init",
+        "input_ids_column": "mft_input_ids",
     },
     {
         "name": "tabi-random-init",
@@ -80,6 +78,9 @@ MODELS = [
 
 logger.info(f"Found {len(MODELS)} models to train.")
 
+# --- Phase 1: Warmup (100 steps) ---
+logger.info("--- Phase 1: Warmup (100 steps) ---")
+
 for i, model_cfg in enumerate(MODELS):
     model_name = model_cfg["name"]
     model_id = model_cfg["model_id"]
@@ -89,59 +90,108 @@ for i, model_cfg in enumerate(MODELS):
     logger.info(f"Model ID: {model_id}")
     logger.info(f"Input Column: {input_column}")
 
-    # Unique run name for WandB
-    run_name = f"{model_name}-distillation"
+    warmup_output_dir = f"./trained_models/{model_name}_warmup"
 
-    config = EmbeddingTrainerConfig(
+    warmup_config = EmbeddingTrainerConfig(
         student_model=model_id,
-        # Training hyperparameters
-        num_epochs=1,
+        num_epochs=1,  # Will be limited by max_steps
+        max_steps=100,
         batch_size=256,
         learning_rate=5e-5,
         warmup_ratio=0.01,
         weight_decay=0.01,
-        max_grad_norm=1.0,
-        # Loss function
         loss_type="cosine",
-        # Pre-encoded dataset column
         input_ids_column=input_column,
         embedding_column="teacher_embedding_final",
-        # Optimization
         use_bf16=True,
         gradient_checkpointing=True,
         compile_model=True,
-        # Output
-        output_dir=f"./trained_models/{model_name}",
-        save_steps=200,
-        logging_steps=20,
-        # WandB
+        output_dir=warmup_output_dir,
+        save_steps=50,
+        logging_steps=5,
         use_wandb=True,
         wandb_project="mft-downstream-distillation",
-        wandb_run_name=run_name,
-        # Push to Hub
+        wandb_run_name=f"{model_name}-warmup",
         push_to_hub=True,
-        hub_model_id=model_id,  # Overwrite the student model repo
+        hub_model_id=model_id,
         hub_token=HF_TOKEN,
     )
 
-    trainer = None
     try:
-        trainer = EmbeddingDistillationTrainer(config)
+        trainer = EmbeddingDistillationTrainer(warmup_config)
         metrics = trainer.train(DATASET_ID)
-        logger.info(f"✓ Finished {model_name}. Loss: {metrics['train_loss']:.4f}")
-    except Exception:
-        logger.error(f"✗ Failed training {model_name}")
-        traceback.print_exc()
-
-    # Cleanup memory to avoid OOM
-    if trainer:
+        logger.info(
+            f"✓ Finished Warmup {model_name}. Loss: {metrics['train_loss']:.4f}"
+        )
         del trainer
-    if config:
-        del config
+        del warmup_config
+    except Exception:
+        logger.error(f"✗ Failed Warmup {model_name}")
+        traceback.print_exc()
+        continue
+
+    # Cleanup
     import gc
 
     import torch
 
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+
+# --- Phase 2: Full Training (1 Epoch) ---
+logger.info("--- Phase 2: Full Training (1 Epoch) ---")
+
+for i, model_cfg in enumerate(MODELS):
+    model_name = model_cfg["name"]
+    model_id = model_cfg["model_id"]
+    input_column = model_cfg["input_ids_column"]
+
+    logger.info(f"\n[{i+1}/{len(MODELS)}] Starting training for: {model_name}")
+    logger.info(f"Model ID: {model_id}")
+    logger.info(f"Input Column: {input_column}")
+
+    full_config = EmbeddingTrainerConfig(
+        student_model=model_id,
+        num_epochs=1,
+        max_steps=None,  # Run full epoch
+        batch_size=256,
+        learning_rate=5e-5,
+        warmup_ratio=0.01,
+        weight_decay=0.01,
+        loss_type="cosine",
+        input_ids_column=input_column,
+        embedding_column="teacher_embedding_final",
+        use_bf16=True,
+        gradient_checkpointing=True,
+        compile_model=True,
+        output_dir=f"./trained_models/{model_name}",
+        save_steps=50,  # Only save at end (handled by trainer)
+        logging_steps=5,
+        use_wandb=True,
+        wandb_project="mft-downstream-distillation",
+        wandb_run_name=f"{model_name}-full",
+        push_to_hub=True,
+        hub_model_id=model_id,
+        hub_token=HF_TOKEN,
+    )
+
+    try:
+        trainer = EmbeddingDistillationTrainer(full_config)
+        metrics = trainer.train(DATASET_ID)
+        logger.info(
+            f"✓ Finished Full Training {model_name}. Loss: {metrics['train_loss']:.4f}"
+        )
+    except Exception:
+        logger.error(f"✗ Failed Full Training {model_name}")
+        traceback.print_exc()
+
+    # Cleanup memory
+    if "trainer" in locals():
+        del trainer
+    if "full_config" in locals():
+        del full_config
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()

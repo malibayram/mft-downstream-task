@@ -78,6 +78,16 @@ To enable training of architectures with incompatible custom tokenizers (e.g., G
 1.  **Offline Encoding:** `input_ids` are pre-generated during dataset preparation.
 2.  **Runtime Patch:** The `Transformer.py` module in `sentence-transformers` was patched to make tokenizer initialization optional (`try-except` block). This allows the training loop to load the model architecture without crashing on tokenizer validation errors, consuming the pre-encoded inputs directly and respecting the `trust_remote_code=True` flag required for custom MFT modeling code.
 
+### 5.4 Two-Phase Training Strategy
+
+To ensure model stability, we implement a **Two-Phase Training Strategy**:
+
+1.  **Warmup Phase (100 Steps)**:  
+    The model is trained for a short burst of 100 steps. This initial phase helps in stabilizing the gradients and warming up the learning rate schedule without risking large updates on a cold model. The result is saved locally.
+
+2.  **Full Training Phase (1 Epoch)**:  
+    The model initialized from the Warmup Phase is then trained for a full epoch over the entire dataset.
+
 ## 6. Training Hyperparameters
 
 | Parameter                  | Configuration       | Justification / Detail                                |
@@ -86,7 +96,7 @@ To enable training of architectures with incompatible custom tokenizers (e.g., G
 | **Epochs**                 | 1                   | Single-pass distillation sufficient for large corpus. |
 | **Learning Rate**          | 5e-5                | Standard Transformer fine-tuning rate.                |
 | **Optimizer**              | AdamW               | `torch.optim.AdamW` (betas=(0.9, 0.999), eps=1e-8).   |
-| **Scheduler**              | Linear              | Linear decay with constant warmup (`ratio=0.01`).     |
+| **Scheduler**              | Linear              | Linear decay with warmup (10%/1% ratios).             |
 | **Loss Function**          | CosineEmbeddingLoss | $1 - \cos(u, v)$.                                     |
 | **Max Grad Norm**          | 1.0                 | Gradient clipping for stability.                      |
 | **Random Seed**            | Random              | System entropy (unfixed).                             |
@@ -96,11 +106,13 @@ To enable training of architectures with incompatible custom tokenizers (e.g., G
 
 ## 7. Stability & Monitoring
 
-- **Memory Management:** Explicit `gc.collect()` and `torch.cuda.empty_cache()` are triggered between model training sessions to prevent fragmentation-induced OOM.
-- **Logging:**
-  - **Step 1-20:** Logged every step (Detailed initial convergence tracking).
-  - **Step 20+:** Logged every 20 steps.
-  - **Checkpointing:** Every 200 steps.
+- **Memory Management:** Explicit `gc.collect()` and `torch.cuda.empty_cache()` are triggered between phases and models to prevent fragmentation.
+- **Logging Strategy:**
+  - **Warmup:** Logged every 5 steps.
+  - **Full Training:** Logged every 50 steps.
+- **Checkpointing:**
+  - **Intermediate Checkpoints:** DISABLED to conserve disk space.
+  - **Final Model:** Saved only at the completion of training phases.
 
 ## 8. Reproducibility
 
