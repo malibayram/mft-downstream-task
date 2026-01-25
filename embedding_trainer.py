@@ -308,6 +308,9 @@ class EmbeddingDistillationTrainer:
         if self.config.push_to_hub and self.config.hub_model_id:
             self.push_to_hub()
 
+        if self._wandb:
+            self._wandb.finish()
+
         return {"train_loss": avg_epoch_loss}
 
     def _forward(self, features: dict) -> torch.Tensor:

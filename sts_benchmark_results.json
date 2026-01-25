@@ -52,5 +52,33 @@
         "processing_time_seconds": 6.58
       }
     ]
+  },
+  {
+    "timestamp": "2026-01-25T18:38:44.718381",
+    "dataset": "figenfikri/stsb_tr",
+    "results": [
+      {
+        "model": "alibayram/mft-downstream-task-embeddinggemma",
+        "pearson": 0.6838,
+        "spearman": 0.6722,
+        "num_samples": 1379,
+        "split": "test",
+        "processing_time_seconds": 10.68
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-25T18:48:39.426130",
+    "dataset": "figenfikri/stsb_tr",
+    "results": [
+      {
+        "model": "alibayram/mft-downstream-task-embeddinggemma",
+        "pearson": 0.7102,
+        "spearman": 0.7,
+        "num_samples": 1379,
+        "split": "test",
+        "processing_time_seconds": 10.85
+      }
+    ]
   }
 ]

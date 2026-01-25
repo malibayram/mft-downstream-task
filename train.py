@@ -86,6 +86,10 @@ for i, model_cfg in enumerate(MODELS):
     model_id = model_cfg["model_id"]
     input_column = model_cfg["input_ids_column"]
 
+    if model_name == "mft-embeddinggemma":
+        logger.info(f"Skipping Phase 1 for {model_name} (already 100-step trained).")
+        continue
+
     logger.info(f"\n[{i+1}/{len(MODELS)}] Starting training for: {model_name}")
     logger.info(f"Model ID: {model_id}")
     logger.info(f"Input Column: {input_column}")
