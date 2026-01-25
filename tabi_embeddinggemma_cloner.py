@@ -11,8 +11,9 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 HF_TOKEN = os.environ.get("HF_TOKEN")
 
-org_tokenizer = AutoTokenizer.from_pretrained("google/embeddinggemma-300m", token=HF_TOKEN, use_fast=False)
-org_model = AutoModelForCausalLM.from_pretrained("google/embeddinggemma-300m", token=HF_TOKEN)
+org_model_id = "google/embeddinggemma-300m"
+org_tokenizer = AutoTokenizer.from_pretrained(org_model_id, token=HF_TOKEN, use_fast=False)
+org_model = AutoModelForCausalLM.from_pretrained(org_model_id, token=HF_TOKEN)
 org_model = org_model.to(torch.bfloat16)
 
 target_tokenizer = AutoTokenizer.from_pretrained("alibayram/TabiBERT-tokenizer-32k", token=HF_TOKEN, use_fast=False)
@@ -67,7 +68,7 @@ if errors:
     print(f"   ⚠️ {len(errors)} tokens could not be mapped (initialized with mean)")
 
 
-model = SentenceTransformer("google/embeddinggemma-300m")
+model = SentenceTransformer(org_model_id)
 model = model.to(torch.bfloat16)
 
 model.save_pretrained("tabi_cloned")

@@ -374,7 +374,9 @@ class Transformer(InputModule):
 
     def save(self, output_path: str, safe_serialization: bool = True, **kwargs) -> None:
         self.auto_model.save_pretrained(output_path, safe_serialization=safe_serialization)
-        self.tokenizer.save_pretrained(output_path)
+        # Only save tokenizer if it has save_pretrained method (skip custom tokenizers)
+        if hasattr(self.tokenizer, 'save_pretrained'):
+            self.tokenizer.save_pretrained(output_path)
         self.save_config(output_path)
 
     @classmethod
