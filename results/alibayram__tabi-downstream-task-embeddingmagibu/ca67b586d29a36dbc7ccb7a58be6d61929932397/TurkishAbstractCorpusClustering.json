@@ -1,0 +1,32 @@
+{
+  "dataset_revision": "main",
+  "task_name": "TurkishAbstractCorpusClustering",
+  "mteb_version": "1.31.3",
+  "scores": {
+    "test": [
+      {
+        "v_measure": 0.594327,
+        "v_measure_std": 0.011252,
+        "v_measures": [
+          0.619377,
+          0.603417,
+          0.576998,
+          0.594728,
+          0.597512,
+          0.585079,
+          0.582384,
+          0.594349,
+          0.591815,
+          0.597615
+        ],
+        "main_score": 0.594327,
+        "hf_subset": "default",
+        "languages": [
+          "tur-Latn"
+        ]
+      }
+    ]
+  },
+  "evaluation_time": 373.22807788848877,
+  "kg_co2_emissions": null
+}

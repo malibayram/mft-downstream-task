@@ -1,0 +1,73 @@
+{
+  "dataset_revision": "main",
+  "task_name": "THYSentimentClassification",
+  "mteb_version": "1.31.3",
+  "scores": {
+    "test": [
+      {
+        "accuracy": 0.55397,
+        "f1": 0.443516,
+        "f1_weighted": 0.592504,
+        "scores_per_experiment": [
+          {
+            "accuracy": 0.515451,
+            "f1": 0.427916,
+            "f1_weighted": 0.581453
+          },
+          {
+            "accuracy": 0.543991,
+            "f1": 0.413373,
+            "f1_weighted": 0.600842
+          },
+          {
+            "accuracy": 0.511159,
+            "f1": 0.424056,
+            "f1_weighted": 0.54985
+          },
+          {
+            "accuracy": 0.569742,
+            "f1": 0.459016,
+            "f1_weighted": 0.626697
+          },
+          {
+            "accuracy": 0.39206,
+            "f1": 0.349105,
+            "f1_weighted": 0.411095
+          },
+          {
+            "accuracy": 0.676395,
+            "f1": 0.522098,
+            "f1_weighted": 0.675343
+          },
+          {
+            "accuracy": 0.653648,
+            "f1": 0.494887,
+            "f1_weighted": 0.675635
+          },
+          {
+            "accuracy": 0.532403,
+            "f1": 0.428566,
+            "f1_weighted": 0.591095
+          },
+          {
+            "accuracy": 0.594206,
+            "f1": 0.480441,
+            "f1_weighted": 0.626585
+          },
+          {
+            "accuracy": 0.550644,
+            "f1": 0.435702,
+            "f1_weighted": 0.586446
+          }
+        ],
+        "main_score": 0.55397,
+        "hf_subset": "default",
+        "languages": [
+          "tur-Latn"
+        ]
+      }
+    ]
+  },
+  "evaluation_time": 117.3603572845459,
+  "kg_co2_emissions": null
+}
