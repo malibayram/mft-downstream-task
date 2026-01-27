@@ -1,22 +1,29 @@
-# Paper Completion Plan: *Tokens with Meaning* + Experiments Integration
+# Paper Completion Plan: *Tokens with Meaning* — Revision + Downstream Evaluation Integration
 
 ## 0) Goal (what “done” means)
 
 1. **Complete and polish the paper** in `Tokens_with_Meaning__A_Hybrid_Tokenization_Approach_for_NLP/` so it is internally consistent, reproducible, and includes the repo’s experimental evidence.
 2. **Read and cite every paper in `papers/`** and mention each in the paper text (at least once, in an appropriate section).
-3. **Incorporate tests/experiments from this repo** (distillation setup + STS + MTEB + version tracking) into the paper with clear methodology, results tables/figures, and limitations.
+3. **Add downstream task evidence** (STS + MTEB + version tracking) to address reviewer concerns, with clear methodology, results tables/figures, and limitations.
 4. **Create small Markdown “reports” per folder/file first**, then convert the key points into LaTeX edits (paper sections, tables, figures, citations).
 
 Deliverable: updated LaTeX sources + updated `tokenizer.bib` + any new `*.tex` tables/figures needed, and the paper compiles cleanly.
 
 ---
 
-## 1) Scope & important clarifications (updated with your decisions)
+## 1) Scope & important clarifications (updated with your decisions + reviews)
 
 ### 1.0 Confirmed decisions (from you)
 - **Downstream distillation experiments will be part of the main Results** (not Appendix-only), with the Appendix used only for long version-history tables if needed.
 - **Tokenizer comparison is the objective**; we will not center narrative on architecture effects (Gemma vs Magibu), beyond minimal reporting as a control.
 - If it improves clarity/presentation, it’s OK to **re-run report-generation scripts** and/or add a small helper script for cleaner charts/tables.
+
+### 1.0.1 Wording alignment (per your request)
+We will **de-emphasize “distillation” terminology** in the paper and frame the new evidence as:
+- **Downstream sentence embedding evaluation** (STS and MTEB-style retrieval/classification tasks).
+- Training details (teacher-guided / embedding-alignment) will be described *only as needed for reproducibility* and will not be positioned as the key contribution.
+
+Important: we will not claim “the result will be similar for pretraining/fine-tuning” as a fact unless we add evidence. We can safely phrase it as a **hypothesis/expectation** and explicitly label it as such (or keep it as Future Work).
 
 ### 1.1 “Read all files detailly”
 This repo includes large vendored codebases (notably `sentence_transformers/` and `mteb-tr/`). A literal line-by-line “deep reading” of those would be extremely time-consuming and mostly irrelevant to the paper.
@@ -36,25 +43,46 @@ Proposed approach:
 
 Assumption (per your note): **only re-run if it improves tables/figures**, otherwise integrate existing artifacts.
 
-### 1.3 Narrative goals for the downstream section (your “most important part”)
+---
+
+## 2) Reviewer-driven revision priorities (new; ties plan directly to feedback)
+
+This section translates your Jan 2026 reviews into concrete edits so the revision reads like a response to reviewers.
+
+### 2.1 Must-fix (blocked acceptance)
+- **Add downstream task performance** (address Reviewer Wx9w + multiple others): integrate STS + MTEB results into `results_and_analysis.tex`.
+- **Move quantitative findings out of Introduction** (Reviewer 1): refactor `introduction.tex` so it sets up problem/RQs/contributions; keep numbers in Results.
+- **Restructure Methodology with clear subsections + algorithm box/pseudocode** (Reviewer 1, 3): add titled subsections and a step-by-step algorithm box; remove evaluative claims from Methodology.
+- **Define TR% and Pure% clearly where first used (and briefly in abstract)** (Reviewer 4): add crisp definitions, including how “morpheme alignment/purity” is computed.
+- **Fix citation style (“[17] demonstrated…”) + remove weak sources** (Reviewer 2, 4): adopt “FirstAuthor et al.” phrasing; remove/replace non-rigorous citations (e.g., LinkedIn) with peer-reviewed sources.
+
+### 2.2 Strongly recommended (to strengthen credibility)
+- **Linguistic examples with Leipzig glosses** (Reviewer jLKM): add morpheme-by-morpheme glosses + full-word meaning for *every* showcased example; standardize formatting.
+- **Clarify data sources used for dictionary/BPE training** (Reviewer jLKM, Reviewer 1): cite corpora by name at first mention and describe extraction method.
+- **Clarify edge cases**: uppercase sequences (e.g., `HTTPServer`), acronyms, compounds handling; clarify “special category” and “distinct surface forms”.
+- **Efficiency metrics** (Reviewer 3/4): measure and report tokenization throughput/latency (and clearly label what is measured).
+
+### 2.3 Scope/claims corrections
+- **Language independence claim**: reframe to “language-agnostic framework” and explicitly state what requires language-specific resources (root/affix lists), and what transfers. Keep non-Turkish benchmarks as Future Work unless we add new experiments.
+- **Balance related work**: add citations representing *contradictory findings* (Reviewer 4) and broaden beyond agglutinative-only where possible (e.g., inflectional languages; include Slovak morphological tokenizer reference from review).
+
+---
+
+## 3) Narrative goals for the downstream section (paper-objective aligned)
 
 #### 1.3.1 Core claims we will support using repo artifacts
 1. **STS:** MFT-distilled models achieve materially higher Pearson/Spearman on `figenfikri/stsb_tr` than Tabi-distilled models (source: `STS_BENCHMARK_RESULTS.md`, `sts_benchmark_results.json`).
 2. **MTEB-TR:** Even if Tabi gets isolated wins on some tasks/aggregates, the tokenizer-first story prioritizes **semantic similarity + retrieval relevance**, where MFT is stronger overall in our evidence (source: `MTEB_BENCHMARK_RESULTS.md`, `results/**`).
 3. **Random-init sanity check:** With random initialization, **Tabi does not catch MFT** on STS and does not surpass it on overall MTEB averages; this supports that improvements are not just noise (source: the random-init rows in both STS/MTEB reports).
 
-#### 1.3.2 How we will handle “BPE (Tabi) is slower to train/adapt”
-The repo currently provides strong **quality** evidence, but not an obvious direct **training-time** comparison between tokenizers.
-
-Plan (safe + defensible):
-- Prefer the empirically supported statement: **“Under the same downstream distillation budget, Tabi does not catch MFT on STS/retrieval-focused quality.”**
-- If you want an explicit *efficiency* angle, we’ll do one of:
-  - (A) add a small local-only microbenchmark (tokenization/encoding throughput on a fixed text sample) and report it as *tokenization throughput*, not training speed; or
-  - (B) keep “adaptation” phrasing as *sample efficiency / need for language-specific priors*, backed by citations rather than wall-clock claims.
+#### 3.2 How we will phrase “Tabi/BPE doesn’t catch MFT” (and avoid over-claiming)
+We will emphasize **quality under fixed training budget** (supported by artifacts) rather than asserting wall-clock speed:
+- Primary statement (supported): **“Under the same downstream training budget, the Tabi baseline does not catch the proposed MFT tokenizer on STS/retrieval-focused quality.”**
+- Secondary statement (only if we add evidence): tokenization throughput/efficiency via a microbenchmark, explicitly labeled as *tokenization speed*, not “training speed”.
 
 ---
 
-## 2) Inventory (what we will touch and why)
+## 4) Inventory (what we will touch and why)
 
 ### 2.1 Paper sources (primary)
 - `Tokens_with_Meaning__A_Hybrid_Tokenization_Approach_for_NLP/main.tex` (main entry)
@@ -67,12 +95,12 @@ Plan (safe + defensible):
 - `Tokens_with_Meaning__A_Hybrid_Tokenization_Approach_for_NLP/conclusion.tex`
 - `Tokens_with_Meaning__A_Hybrid_Tokenization_Approach_for_NLP/tokenizer.bib`
 
-### 2.2 “Downstream” experiment artifacts to integrate
+### 4.2 “Downstream” experiment artifacts to integrate
 - Protocol/writeups: `TRAINING_DETAILS.md`, `STS_BENCHMARK_RESULTS.md`, `MTEB_BENCHMARK_RESULTS.md`, `VERSION_BENCHMARK_RESULTS.md`
 - Raw/structured results: `sts_benchmark_results.json`, `sts_benchmark_results_p.json`, `results/**`
 - Figures: `sts_benchmark_chart*.png`, `mteb_average_scores.png`, `version_history_*.png`
 
-### 2.3 Key experiment code (to document)
+### 4.3 Key experiment code (to document)
 - Dataset: `prepare_dataset.py`, `upload_dataset.py`
 - Training: `train.py`, `embedding_trainer.py`
 - Evaluation/reporting: `evaluate_sts_tr.py`, `generate_sts_tables.py`, `generate_mteb_report.py`
@@ -80,31 +108,32 @@ Plan (safe + defensible):
 - Tokenizer + dictionaries: `turkish_tokenizer.py`, `turkish_decoder.py`, `kokler.json`, `ekler.json`, `bpe_tokenler.json`
 - Integration test: `test_custom_tokenizer.py`
 
-### 2.4 Papers that must be cited + mentioned (from `papers/`)
+### 4.4 Papers that must be cited + mentioned (from `papers/`)
 - `papers/Asgari et al. - 2025 - MorphBPE ... .pdf`
 - `papers/Beken Fikri et al. - 2021 - Semantic Similarity Based Evaluation ... .pdf`
 - `papers/Rahimov - 2025 - miLLi Model ... .pdf`
 - `papers/Türker et al. - 2026 - TabiBERT ... .pdf`
 - `papers/papers.bib` (BibTeX entries we can reuse/merge)
 
-### 2.5 Vendored/auxiliary code (targeted documentation)
+### 4.5 Vendored/auxiliary code (targeted documentation)
 - `sentence_transformers/` (we will document the tokenizer bypass + how it enables offline `input_ids` training)
 - `mteb-tr/` (we will document how we use it for MTEB-style evaluation + which tasks/metrics are reported)
 
 ---
 
-## 3) Reporting workflow (Markdown first, then LaTeX)
+## 5) Reporting workflow (Markdown first, then LaTeX)
 
 I will create a `reports/` folder and produce short, focused Markdown notes before editing the paper. Proposed structure:
 
 - `reports/00_repo_overview.md`
 - `reports/01_tokenizer_implementation.md` (tokenizer pipeline + dictionaries + decoding)
 - `reports/02_dataset_preparation.md` (`prepare_dataset.py`, dataset schema, filtering, sequence limits)
-- `reports/03_training_distillation.md` (`train.py`, `embedding_trainer.py`, hyperparams, hardware)
+- `reports/03_training_and_setup.md` (`train.py`, `embedding_trainer.py`, hyperparams, hardware) — written for reproducibility, but kept secondary in paper narrative
 - `reports/04_sts_evaluation.md` (`evaluate_sts_tr.py`, charts, JSON format)
 - `reports/05_mteb_evaluation.md` (`generate_mteb_report.py`, `results/**`, aggregate metrics)
 - `reports/06_version_tracking.md` (`VERSION_BENCHMARK_RESULTS.md`, what “revision” means, charts)
 - `reports/07_vendored_dependencies.md` (what we rely on inside `sentence_transformers/` + `mteb-tr/`, and what we changed)
+- `reports/08_reviewer_fixes_matrix.md` (each reviewer point → exact file/section change)
 - `reports/papers/`:
   - `reports/papers/morphbpe_2025.md`
   - `reports/papers/semantic_similarity_summarization_2021.md`
@@ -120,9 +149,35 @@ Each report will follow the same mini-template:
 
 ---
 
-## 4) Paper integration plan (what will be added/changed)
+## 6) Paper integration plan (what will be added/changed)
 
-### 4.1 Baseline pass: ensure the current paper is coherent
+### 6.1 Structural refactor to match reviewer expectations
+1. **Title update** to include typology/language, e.g.:
+   - “Tokens with Meaning: A Hybrid Tokenization Approach for Morphologically Rich (Agglutinative) Languages”
+   - or explicitly “... for Turkish and Agglutinative Languages”
+2. **Introduction refactor**:
+   - remove/relocate quantitative results
+   - add research questions + contributions list
+3. **Methodology refactor**:
+   - add subsections: *Dictionary Construction*, *Normalization Rules*, *Encoding Algorithm*, *BPE Fallback*, *Decoding*, *Edge Cases*
+   - add an **Algorithm box/pseudocode** and one worked example with Leipzig gloss
+4. **Related work cleanup**:
+   - keep it as literature survey only; move speculative content to Discussion/Future Work
+   - add contradictory findings + broaden beyond agglutinative-only where possible
+
+### 6.2 Linguistic examples upgrade (Leipzig glossing)
+For every example word/sentence:
+- Add segmented form, gloss line, and free translation line (Leipzig conventions).
+- Ensure consistent formatting (italicization, quotes, examples numbering).
+
+### 6.3 Transparency & definitions
+- Define **TR%** and **Pure%** early (abstract + first mention), including computation details.
+- Cite and describe data sources for:
+  - root extraction corpora (names + links/citations)
+  - BPE training corpora + whether SentencePiece uses BPE or Unigram (explicit)
+- Clarify whether tokenization is lossless; if not, state what information is abstracted and how decoding behaves.
+
+### 6.4 Experiments: add downstream performance as **main results**
 1. Read `main.tex` and each section `*.tex` end-to-end.
 2. Identify gaps/inconsistencies:
    - Missing citations / uncited claims
@@ -146,16 +201,14 @@ Planned placement (initial proposal, will confirm after reading each PDF):
 - TabiBERT (Turkish foundation model + benchmark): `related_work.tex` + benchmark context; also cite where we describe Tabi tokenizer baseline.
 - Semantic similarity for summarization evaluation (2021): cite when motivating correlation-based evaluation (ties cleanly to STS-like correlation reporting in our downstream experiments).
 
-### 4.3 Experiments: add a new “Downstream Distillation” evaluation section
-The current paper focuses on tokenization quality and TR-MMLU-style evaluation. This repo adds a second axis: *tokenizer choice → embedding distillation quality → downstream retrieval/STS performance*.
+The previous submission lacked downstream task evidence. This revision adds **downstream evaluation** aligned with the paper’s goal: showing that more linguistically meaningful tokens translate to better semantic representations on real tasks.
 
 Plan:
-1. Add a subsection in `methodology.tex`:
-   - Distillation objective (cosine loss)
-   - Teacher embedding column and offline encoding rationale
-   - Tokenizer bypass details (why needed; what code change enables it)
-   - Training hyperparameters and compute (from `TRAINING_DETAILS.md`)
-2. Add a subsection in `results_and_analysis.tex`:
+1. Add a short **Experimental Setup** subsection (keep “distillation” minimal):
+   - what models are compared (MFT vs Tabi tokenization variants)
+   - what tasks/benchmarks (STS + MTEB-TR)
+   - how models are trained/evaluated (only essentials for reproducibility)
+2. Add a **Downstream Performance** subsection in `results_and_analysis.tex`:
    - STS results summary (from `STS_BENCHMARK_RESULTS.md`)
    - MTEB results summary (from `MTEB_BENCHMARK_RESULTS.md`)
    - Version history analysis (from `VERSION_BENCHMARK_RESULTS.md`) as:
@@ -182,12 +235,13 @@ Where helpful, add one compact algorithm/pseudocode block or flow figure (only i
 
 ---
 
-## 5) Concrete execution steps (what I will do once you approve)
+## 7) Concrete execution steps (what I will do once you approve)
 
 ### Phase A — Reporting (Markdown reports)
 1. Create `reports/` and write `reports/00_repo_overview.md`.
 2. Write the 6–8 focused reports listed in section 3.
 3. For each report, include “paper insertion points” (exact `*.tex` file + subsection title).
+4. Write `reports/08_reviewer_fixes_matrix.md` mapping each review point → exact edit.
 
 ### Phase B — Paper edits (LaTeX integration)
 1. Update `related_work.tex` to include and discuss all `papers/` items.
@@ -197,6 +251,8 @@ Where helpful, add one compact algorithm/pseudocode block or flow figure (only i
    - **STS:** headline table + chart, explicit “MFT vs Tabi” delta, and random-init sanity check.
    - **MTEB-TR:** overall average + category averages + short category takeaways (do not over-focus on backbone differences).
    - **Version benchmark:** 3–5 sentence robustness summary; move detailed version history table(s) to Appendix if needed.
+4. Refactor `introduction.tex` and `methodology.tex` per Section 6.1 (move results out of Intro; add algorithm box; add subsections).
+5. Add Leipzig gloss formatting and update examples throughout (Section 6.2).
 4. Update `tokenizer.bib`:
    - merge entries from `papers/papers.bib`
    - ensure every new citation key is referenced at least once
@@ -213,7 +269,7 @@ Optional (only if it improves presentation):
 
 ---
 
-## 6) Acceptance checklist (quick review criteria)
+## 8) Acceptance checklist (quick review criteria)
 
 - All four `papers/*.pdf` are (a) cited in BibTeX and (b) explicitly mentioned in the paper text.
 - Downstream experiments are described with enough detail to reproduce (inputs, code entrypoints, hyperparams, metrics).
@@ -225,8 +281,9 @@ Optional (only if it improves presentation):
 
 ---
 
-## 7) Quick confirmations (so I implement the exact narrative you want)
+## 9) Quick confirmations (so I implement the exact narrative you want)
 
-1. OK to phrase the key claim as: **“Under the same downstream distillation budget, Tabi does not catch MFT on STS/retrieval-focused quality”** (and keep any “slower to train” claim either benchmarked separately or softened/cited)?
-2. For MTEB, should the headline metric be **overall average** (simple) or a **retrieval+STS subset average** (more aligned with your objective)?
+1. OK to phrase the key claim as: **“Under the same downstream training budget, Tabi does not catch MFT on STS/retrieval-focused quality”** (and only discuss “speed/adaptation” if we add a microbenchmark or strong citations)?
+2. For MTEB, do you prefer the headline metric to be **overall average** (simple) or a **retrieval+STS subset average** (more aligned with your objective)?
 3. Should detailed version history go to the **Appendix by default** (recommended), with only a short robustness summary in the main Results?
+4. OK to update the **title** to include Turkish/agglutinative typology (as suggested by Reviewer jLKM)?

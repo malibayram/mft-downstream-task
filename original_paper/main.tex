@@ -103,7 +103,7 @@ Benchmark evaluations such as Massive Multitask Language Understanding (MMLU) \c
 
 To address these issues, \cite{bayram_tokenization_2025} proposed a novel linguistic integrity framework for evaluating tokenization strategies. This framework introduced token purity and language-specific token percentages (\%TR) as critical evaluation metrics, providing a structured approach for assessing how well tokenization preserves morphological structures. Experimental results confirmed that higher \%TR values correlate with improved performance on MMLU-style benchmarks, underscoring the importance of preserving language-specific morphemes.
 
-Recent efforts to refine tokenization strategies have included hybrid and domain-adaptive approaches. The ITUTurkBERT system \cite{kayali_hybrid_2024} explored a hybrid tokenization method, combining whitespace segmentation with BPE and Unigram-based subword representations. This method was particularly beneficial for Named Entity Recognition (NER) and abstractive summarization, where preserving linguistic structure is crucial.
+Recent efforts to refine tokenization strategies have included hybrid and domain-adaptive approaches. The ITUTurkBERT system \cite{kayali_hybrid_2024} explored a hybrid tokenization method, combining whitespace segmentation with BPE and Unigram-based subword representations. This method was particularly beneficial for Named Entity Recognition (NER) and abstractive summarization, where preserving linguistic structure is crucial. Similarly, \cite{shakrapani_gpt_2024} examined the differences between GPT-4 and GPT-4o, demonstrating that model performance fluctuates depending on tokenization quality, especially in non-English tasks.
 
 Beyond model pretraining, tokenization impacts computational efficiency and energy consumption. \cite{henderson_towards_2022} argued that BPE is suboptimal for pretraining due to inefficient vocabulary utilization, a concern echoed in \cite{henderson_towards_2022}. These studies emphasize the need for tokenization techniques that minimize redundancy and optimize training efficiency. Similarly, research on EuroLLM \cite{martins_eurollm_2024} has focused on developing multilingual tokenizers that adjust dynamically to different languages, reducing processing overhead while improving semantic coherence.
 
@@ -377,41 +377,6 @@ Its segmentation strategy is similar to LLaMA and Qwen—partially aware of Turk
 \vspace{1em}
 
 The results presented in this section provide strong empirical support for the hypothesis introduced in the introduction: tokenizers that explicitly incorporate morphological and phonological knowledge of Turkish can outperform general-purpose models in both segmentation accuracy and linguistic coherence. While most state-of-the-art tokenizers struggle with root-fragmentation, over-segmentation, and inconsistent affix treatment, the proposed hybrid tokenizer consistently identifies morpheme boundaries, preserves semantically meaningful units, and reduces vocabulary redundancy. These findings validate the motivation behind this work: morphologically informed tokenization is essential for robust and interpretable NLP in agglutinative languages like Turkish. The qualitative comparisons presented here illustrate not only the performance gap between general and language-specific tokenizers, but also the need for tokenizer architectures that respect language-internal rules.
-
-\subsection{Downstream Sentence Embedding Evaluation (STS and MTEB-TR)}
-\label{sec:downstream}
-
-While TR~\% and Pure~\% provide interpretable diagnostics of morphological alignment, they do not directly measure task performance. We therefore evaluate whether the proposed morphology-first tokenizer improves sentence-level representations on downstream benchmarks. We report results on Turkish semantic textual similarity (STSb-TR) using Pearson/Spearman correlation \cite{beken_fikri_semantic_2021} and on a Turkish embedding benchmark suite following the Massive Text Embedding Benchmark (MTEB) methodology \cite{mteb_massive_text_embedding_benchmark}.
-
-To isolate tokenizer effects under a controlled training budget, we train sentence embedding models via teacher-guided embedding alignment, where student representations are optimized to match fixed teacher vectors for the same text. This setting avoids online teacher inference while retaining a downstream-relevant objective. Training details (hardware, hyperparameters, dataset schema, and filtering) are provided in \texttt{TRAINING\_DETAILS.md}. We compare the proposed tokenizer (MFT) against a strong Turkish subword baseline (Tabi) under the same training recipe, and we include randomly initialized baselines as a sanity check.
-
-\input{downstream_tables}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{figures/sts_benchmark_chart_test.png}
-\caption{STS benchmark test split results across training steps (from \texttt{STS\_BENCHMARK\_RESULTS.md}).}
-\label{fig:sts_chart}
-\end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{figures/mteb_average_scores.png}
-\caption{Overall average MTEB-TR scores across evaluated models (from \texttt{MTEB\_BENCHMARK\_RESULTS.md}).}
-\label{fig:mteb_avg}
-\end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.49\linewidth]{figures/version_history_pearson.png}\hfill
-\includegraphics[width=0.49\linewidth]{figures/version_history_spearman.png}
-\caption{Checkpoint-history robustness on STSb-TR (Pearson/Spearman), from \texttt{VERSION\_BENCHMARK\_RESULTS.md}.}
-\label{fig:version_history}
-\end{figure}
-
-Across runs, MFT provides the clearest gains on semantic similarity: the best MFT model reaches 74.41\% Pearson on STSb-TR compared with 66.29\% for the best Tabi model, and the gap persists under random initialization (47.09\% vs.\ 40.53\%). On MTEB-TR, the best Tabi model achieves a slightly higher overall average (62.59\% vs.\ 62.09\%), whereas MFT achieves the strongest STS category average (74.73\% vs.\ 72.41\%) and a substantially stronger random-initialized baseline (38.99\% vs.\ 33.33\%), suggesting that morphology-first tokenization provides a more informative inductive bias when learning starts from scratch.
-
-\FloatBarrier
 
 \section{Conclusion}
 \label{sec:conclusion}

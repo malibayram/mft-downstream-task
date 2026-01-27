@@ -1,0 +1,48 @@
+\section{Appendix: Additional Downstream Details}
+\label{sec:appendix}
+
+This appendix provides supplementary details for the downstream evaluation. The full raw artifacts are available in the repository root:
+\texttt{STS\_BENCHMARK\_RESULTS.md}, \texttt{MTEB\_BENCHMARK\_RESULTS.md}, and \texttt{VERSION\_BENCHMARK\_RESULTS.md}.
+
+\subsection{Training Setup Summary}
+\label{sec:appendix_training}
+
+\begin{table}[h]
+\centering
+\caption{Summary of the downstream sentence embedding training protocol used for tokenizer comparison. See \texttt{TRAINING\_DETAILS.md} for the full configuration.}
+\label{tab:training_setup}
+\begin{tabular}{ll}
+\toprule
+Item & Setting \\
+\midrule
+Objective & Cosine embedding alignment to teacher vectors \\
+Pooling & Mean pooling (mask-aware) \\
+Max sequence length & 2048 tokens (filter samples exceeding this length) \\
+Precision & bf16 (CUDA) \\
+Batch size & 256 \\
+Learning rate & $5\times 10^{-5}$ (AdamW) \\
+Warmup & 1\% warmup ratio \\
+Epochs & 1 \\
+Gradient checkpointing & Enabled \\
+Compute node & NVIDIA H100 80GB (reported in \texttt{TRAINING\_DETAILS.md}) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Dataset Schema and Filtering}
+\label{sec:appendix_dataset}
+
+The training dataset is stored with pre-encoded input ids for each tokenizer variant to avoid runtime tokenization overhead. Each sample includes:
+\texttt{mft\_input\_ids}, \texttt{tabi\_input\_ids}, and \texttt{teacher\_embedding\_final}. Samples are filtered if either encoded sequence exceeds 2048 tokens.
+
+\subsection{Version Sensitivity (summary tables)}
+\label{sec:appendix_version}
+
+For space reasons, we summarize version sensitivity in the main text and provide plots (Pearson/Spearman history) in the repository. Detailed per-checkpoint tables are kept in \texttt{VERSION\_BENCHMARK\_RESULTS.md}.
+
+\input{appendix_sts_full}
+\input{appendix_mteb_tasks}
+\input{appendix_versions}
+\input{appendix_affixes}
+\input{appendix_root_variants}
+\input{appendix_examples}
