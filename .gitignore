@@ -19,5 +19,6 @@ sts_benchmark_chart*.png
 *.log
 *.out
 *.synctex.gz
+*.synctex.gz(busy)
 *.fdb_latexmk
 *.fls

@@ -1,0 +1,17 @@
+category,avg_similarity,num_pairs
+anaphor_agreement,0.9921875,1000
+argument_structure_ditransitive,0.9921875,1000
+argument_structure_transitive,0.98046875,1000
+binding,0.9609375,1000
+determiners,0.984375,1000
+ellipsis,0.9453125,1000
+irregular_forms,0.94921875,1000
+island_effects,0.9296875,1000
+nominalization,0.9765625,1000
+npi_licensing,0.91796875,1000
+passives,0.91015625,1000
+quantifiers,0.953125,1000
+relative_clauses,0.98828125,1000
+scrambling,0.953125,1000
+subject_verb_agreement,0.9609375,1000
+suspended_affixation,0.9765625,1000
