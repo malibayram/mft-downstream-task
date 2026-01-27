@@ -1,0 +1,1001 @@
+good_sentence;bad_sentence;good_cue;bad_cue;critical_region;phenomenon
+Özellikle kışın bu köyde erken yatılır.;Özellikle kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Ağır karla kaplı yollarda dikkatli yürünür.;Ağır karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+İkinci sınav haftasında gece geç saatlere kadar çalışıldı.;İkinci sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+4 otobüs yolda kalınca soğukta donuldu.;4 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Bu uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Bu uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Program köy meydanında davul zurna eşliğinde dans edildi.;Program köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Amerikan uçak gemisinin güvertesinden denize atlandı.;Amerikan uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Bir kütüphanede fısıltıyla bile konuşulmaz.;Bir kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Gece konser alanında coşkuyla dans edildi.;Gece konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Çocuklar yaz tatilinde bol bol uyunur.;Çocuklar yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+İlk yamaç paraşütüyle uçurumdan atlandı.;İlk yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Kamp kumsalda sabah erken saatlerde koşulur.;Kamp kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+İlk parkurda engellerin üzerinden atlanır.;İlk parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Giriş sınav öncesi kütüphanede hummalıca çalışıldı.;Giriş sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Mücadele sabah okul bahçesinde koşuldu.;Mücadele sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Çocuk plajda güneş altında uzun süre yatılıyor.;Çocuk plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Hayat sevilince daha çok gülümsenir.;Hayat sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Her yazlık evde sabahları geç uyunur.;Her yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Araç yarış pistinde son turda hızlanılır.;Araç yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+İnsanlar uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;İnsanlar uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Adam yeraltı mağarasında karanlıkta dikkatlice yürünür.;Adam yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Volkanik gölde asitli suya kesinlikle girilmez.;Volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Bir yamaç paraşütüyle uçurumdan atlandı.;Bir yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Etkinlik sabah okul bahçesinde koşuldu.;Etkinlik sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Ayrıca kayak merkezinde dik yamaçlardan atlanır.;Ayrıca kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Bu sınav öncesi kütüphanede hummalıca çalışıldı.;Bu sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Tüm konser alanında coşkuyla dans edildi.;Tüm konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Ve üniversite kütüphanesinde sessizce çalışıldı.;Ve üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Mars kolonisinde basınçlı odalarda uyunur.;Mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Yarış şehir parkında sabah erken saatlerde koşulur.;Yarış şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Erkek serbest dalışta 10 metreden atlanıyor.;Erkek serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+İlk sabah okul bahçesinde koşuldu.;İlk sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Çok sıcak yaz günlerinde site havuzda serin serin yüzülür.;Çok sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Yüksek kayalıklardan dikkatlice atlanıyor.;Yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Proje biyolojik laboratuvarda steril ortamda çalışıldı.;Proje biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Herkes yeni yıl sabahında geç uyunur.;Herkes yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Sarı mercan resifinde renkli balıklarla yüzülür.;Sarı mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Daha yüksek kayalıklardan dikkatlice atlanıyor.;Daha yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Alanya yaz tatilinde bol bol uyunur.;Alanya yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Mindenki üzgünken daha az konuşulur.;Mindenki üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Bir uçak gemisinin güvertesinden denize atlandı.;Bir uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Bir kanalda hemen batılıyor.;Bir kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Hayat yalnızken daha çok büyünür.;Hayat yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+İki otobüs yolda kalınca soğukta donuldu.;İki otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Osmanlı ortaçağ kalesinin zindanlarında soğukta donuldu.;Osmanlı ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Gece yemekten sonra biraz dinlenilir.;Gece yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Oyuncu uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Oyuncu uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Bizim kütüphanede fısıltıyla bile konuşulmaz.;Bizim kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+O serada nemli koridorlarda yürünür.;O serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Bu antrenmanda son tur hızlı koşuldu.;Bu antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Ve yazın ince giyinilir.;Ve yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Şu hava güzelken daha çok dışarı çıkılır.;Şu hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+İnsanlar kışın bu gölde buz üstünde yürünür.;İnsanlar kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Final döneminde eski kütüphanede çalışıldı.;Final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Bilimsel araştırma projesi için gece boyunca çalışıldı.;Bilimsel araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Bir uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Bir uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Insan yeni bir şey öğrenilince mutlu olunur.;Insan yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Tüm ormanlık alanda dikkatlice koşulur.;Tüm ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Ayrıca nükleer santralde radyasyon alanlarına girilmez.;Ayrıca nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+İki biyolojik laboratuvarda steril ortamda çalışıldı.;İki biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Yüksek akıntılı sularda yüzülmez.;Yüksek akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Ve yorgunken daha çabuk uyunur.;Ve yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Maç yarışın son metresinde hızla koşuldu.;Maç yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+İnsan yeraltı mağarasında karanlıkta dikkatlice yürünür.;İnsan yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Ancak üniversite kütüphanesinde sessizce çalışıldı.;Ancak üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+2- yatılı okulda erkenden uyunur.;2- yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Oyun deniz kenarında sabah erken saatte koşulur.;Oyun deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Ayrıca uzun uçuşlarda rahatça uyunur.;Ayrıca uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+İnsan dijital detoks kampında teknolojiden uzak yaşanır.;İnsan dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Uygulama şehir parkında sabah erken saatlerde koşulur.;Uygulama şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+İnsanlar gençken daha çok eğlenilir.;İnsanlar gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+İnce karla kaplı yollarda dikkatli yürünür.;İnce karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+Eski opera binasında akustik test sırasında dans edildi.;Eski opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Özellikle yağmur yağınca şemsiye ile yürünür.;Özellikle yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+• lunaparkta hızlı trenlerde çığlık atılır.;• lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+3. parkurda engellerin üzerinden atlanır.;3. parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Sonra festival alanında sabaha kadar dans edildi.;Sonra festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Ardından ortaçağ kalesinin zindanlarında soğukta donuldu.;Ardından ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+İnsan para kazanınca rahat yaşanır.;İnsan para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+İnsan yeni bir şey öğrenilince mutlu olunur.;İnsan yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Adana şehir merkezinde gece geç saatlere kadar yürünür.;Adana şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Ankara maratonda son kilometrede hızlı koşuldu.;Ankara maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Hava antarktika'da -50 derecede hemen donulur.;Hava antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Antalya şehir merkezinde gece geç saatlere kadar yürünür.;Antalya şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Bir uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Bir uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Ayrıca kışın bu köyde erken yatılır.;Ayrıca kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+2. lunaparkta hızlı trenlerde çığlık atılır.;2. lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Biyolojik laboratuvarda steril ortamda çalışıldı.;Biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Sadece yaz aylarında bu plajda bol bol yüzülür.;Sadece yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Bu kanalda hemen batılıyor.;Bu kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Kayak merkezinde dik yamaçlardan atlanır.;Kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Dünya uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Dünya uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+İlk üniversite kütüphanesinde sessizce çalışıldı.;İlk üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Büyük stadyumda yapay çimde hızlı koşulur.;Büyük stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Mücadele kumsalda sabah erken saatlerde koşulur.;Mücadele kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+O yeraltı sığınağında haftalarca mahsur kalındı.;O yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Beyaz mercan resifinde renkli balıklarla yüzülür.;Beyaz mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Ancak uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Ancak uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Hep dertsizken daha çok gülünür.;Hep dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Böyle hava güzelken daha çok dışarı çıkılır.;Böyle hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Çocuklar yaz kampında derin nehirlere atlanıyor.;Çocuklar yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Merkezi sınav öncesi kütüphanede hummalıca çalışıldı.;Merkezi sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Daha derinlerde uzun süre çalışıldı.;Daha derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Sıcak yaz gecelerinde balkonda uyunur.;Sıcak yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Ayrıca kışın kalın giyinilir.;Ayrıca kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Bir üniversite kütüphanesinde sessizce çalışıldı.;Bir üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+2016 yeni yıl sabahında geç uyunur.;2016 yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Bu ormanlık alanda dikkatlice koşulur.;Bu ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Tarihi opera binasında akustik test sırasında dans edildi.;Tarihi opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Deniz kenarında sabah erken saatte koşulur.;Deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Büyük festival alanında sabaha kadar dans edildi.;Büyük festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Festival alanında sabaha kadar dans edildi.;Festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Ama yorgunken daha çabuk uyunur.;Ama yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+İnsan karda kaymadan yürünmez.;İnsan karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Çocuk gençken daha çok eğlenilir.;Çocuk gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Monaco formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Monaco formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+İnsanlar yazın bu gölde serinlemek için yüzülür.;İnsanlar yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Sonra köy meydanında davul zurna eşliğinde dans edildi.;Sonra köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Yine hava güzelken daha çok dışarı çıkılır.;Yine hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+3. lunaparkta hızlı trenlerde çığlık atılır.;3. lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Fakat alışınca çok gürültülü ortamlarda bile uyunur.;Fakat alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Bu hava güzelken daha çok dışarı çıkılır.;Bu hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Çok yoğun kar yağışında kulübenin dışında çabuk donulur.;Çok yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Yoğun kar yağışında kulübenin dışında çabuk donulur.;Yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+En sıcak yaz günlerinde gölgede uzanılır.;En sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Uzun yaz akşamları sahilde keyifle yürünür.;Uzun yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Yeni biyolojik laboratuvarda steril ortamda çalışıldı.;Yeni biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Daha sıcak yaz günlerinde gölgede uzanılır.;Daha sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+İnsanlar yalnızken daha çok büyünür.;İnsanlar yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Küçük mercan resifinde renkli balıklarla yüzülür.;Küçük mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Su antarktika'da -50 derecede hemen donulur.;Su antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Özellikle yüksek kayalıklardan dikkatlice atlanıyor.;Özellikle yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Kendi yeraltı sığınağında haftalarca mahsur kalındı.;Kendi yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Ancak kütüphanede tam bir sessizlik içinde çalışıldı.;Ancak kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Uzun parkurda engellerin üzerinden atlanır.;Uzun parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Yüksek sınav öncesi kütüphanede hummalıca çalışıldı.;Yüksek sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Rahat para kazanınca rahat yaşanır.;Rahat para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Bugün kütüphanede fısıltıyla bile konuşulmaz.;Bugün kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Sabah hava güzelken daha çok dışarı çıkılır.;Sabah hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+3. akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;3. akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Hava güzelken daha çok dışarı çıkılır.;Hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Yaz akşamları sahilde keyifle yürünür.;Yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Ayrıca uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Ayrıca uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Hiçbir nükleer santralde radyasyon alanlarına girilmez.;Hiçbir nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+2014 yeni yıl sabahında geç uyunur.;2014 yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Bu araştırma projesi için gece boyunca çalışıldı.;Bu araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Ancak yazın bu sahilde rahatça yüzülür.;Ancak yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+İnsan karanlık odada kolayca uyunmaz.;İnsan karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Böylece festival alanında sabaha kadar dans edildi.;Böylece festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Tüm yaz aylarında bu plajda bol bol yüzülür.;Tüm yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Bir yeraltı mağarasında karanlıkta dikkatlice yürünür.;Bir yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Ancak antarktika'da -50 derecede hemen donulur.;Ancak antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Her olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Her olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+İnsan her sene bir yaş daha büyünür.;İnsan her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Açık kumsalda sabah erken saatlerde koşulur.;Açık kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Bu köy yolunda tozlu toprakta yürünür.;Bu köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Bir uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Bir uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+• uzun uçuşlarda rahatça uyunur.;• uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Maç şehir parkında sabah erken saatlerde koşulur.;Maç şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Üzgünken daha az konuşulur.;Üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Ve kütüphanede tam bir sessizlik içinde çalışıldı.;Ve kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Çocuklar yaz tatilinde bol bol uyunur.;Çocuklar yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Gece yağmur yağınca şemsiye ile yürünür.;Gece yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Yüksek ormanlık alanda dikkatlice koşulur.;Yüksek ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Sonra serbest dalışta 10 metreden atlanıyor.;Sonra serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Ayrıca karla kaplı yollarda dikkatli yürünür.;Ayrıca karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+Sonra baloda saatlerce dans edildi.;Sonra baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Sadece akıntılı sularda yüzülmez.;Sadece akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+– stresli zamanlarda daha çok sigara içilir.;– stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Bir yazlık evde sabahları geç uyunur.;Bir yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Yatılı okulda erkenden uyunur.;Yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+İnsan sevilince daha çok gülümsenir.;İnsan sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Büyük orman yangını söndürülürken duman altında kalındı.;Büyük orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+2. boğaz havasında çok güzel yürünür.;2. boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+İlk serbest dalışta 10 metreden atlanıyor.;İlk serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+İnsanlar her sene bir yaş daha büyünür.;İnsanlar her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Akşam konser alanında coşkuyla dans edildi.;Akşam konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+• boğaz havasında çok güzel yürünür.;• boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+2017 yeni yıl sabahında geç uyunur.;2017 yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Özellikle sıcak yaz günlerinde gölgede uzanılır.;Özellikle sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Ve kışın bu köyde erken yatılır.;Ve kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Antalya yaz tatilinde bol bol uyunur.;Antalya yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Bir yeraltı sığınağında haftalarca mahsur kalındı.;Bir yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Kışın kalın giyinilir.;Kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Ve serada nemli koridorlarda yürünür.;Ve serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Kadın yaşlanınca daha erken yatılır.;Kadın yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Sevilince daha çok gülümsenir.;Sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Bir köy yolunda tozlu toprakta yürünür.;Bir köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+İkinci antrenmanda son tur hızlı koşuldu.;İkinci antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Yine kışın bu köyde erken yatılır.;Yine kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+O yazlık evde sabahları geç uyunur.;O yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Ve araştırma projesi için gece boyunca çalışıldı.;Ve araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Artık kütüphanede fısıltıyla bile konuşulmaz.;Artık kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Ama kışın bu köyde erken yatılır.;Ama kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Çok akıntılı sularda yüzülmez.;Çok akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Ancak yoğun kar yağışında kulübenin dışında çabuk donulur.;Ancak yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Final serbest dalışta 10 metreden atlanıyor.;Final serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Genel antrenman sahasında tempolu koşuldu.;Genel antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Yemekten sonra biraz dinlenilir.;Yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Güzel boğaz havasında çok güzel yürünür.;Güzel boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Bir araştırma projesi için gece boyunca çalışıldı.;Bir araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Büyük yüzme havuzunda kurallara uygun şekilde yüzülür.;Büyük yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Su antarktika'da -50 derecede hemen donulur.;Su antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Ardından düğün salonunda sabaha kadar dans edildi.;Ardından düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Özellikle yaz aylarında bu plajda bol bol yüzülür.;Özellikle yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Kadınlar yaşlanınca daha erken yatılır.;Kadınlar yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+• uzun uçuşlarda rahatça uyunur.;• uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+İnsan dertsizken daha çok gülünür.;İnsan dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+– akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;– akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Bu boğaz havasında çok güzel yürünür.;Bu boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Bu uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Bu uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Daha uzun uçuşlarda rahatça uyunur.;Daha uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Sabah okul bahçesinde koşuldu.;Sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Bir ortaçağ kalesinin zindanlarında soğukta donuldu.;Bir ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Proje final döneminde eski kütüphanede çalışıldı.;Proje final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Ayrıca final döneminde eski kütüphanede çalışıldı.;Ayrıca final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Olimpik stadyumda yapay çimde hızlı koşulur.;Olimpik stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Karanlık odada kolayca uyunmaz.;Karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Sınav öncesi kütüphanede hummalıca çalışıldı.;Sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+2. kanalda hemen batılıyor.;2. kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Bir yaz gecelerinde balkonda uyunur.;Bir yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Çok şiddetli kar fırtınasında dışarıda donuldu.;Çok şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Çocuk yalnızken daha çok büyünür.;Çocuk yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Polis yeraltı sığınağında haftalarca mahsur kalındı.;Polis yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+4. lunaparkta hızlı trenlerde çığlık atılır.;4. lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+İnsanlar alışınca çok gürültülü ortamlarda bile uyunur.;İnsanlar alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Tarihi orman yangını söndürülürken duman altında kalındı.;Tarihi orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Sadece yaz aylarında bu plajda bol bol yüzülür.;Sadece yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Özellikle stresli zamanlarda daha çok sigara içilir.;Özellikle stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Sabah yemekten sonra biraz dinlenilir.;Sabah yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Kızıl mercan resifinde renkli balıklarla yüzülür.;Kızıl mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Porsche yarış pistinde son turda hızlanılır.;Porsche yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Şehir merkezinde gece geç saatlere kadar yürünür.;Şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Ayrıca uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Ayrıca uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+5 otobüs yolda kalınca soğukta donuldu.;5 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+3. ormanlık alanda dikkatlice koşulur.;3. ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Üniversite kütüphanesinde sessizce çalışıldı.;Üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+En yüksek kayalıklardan dikkatlice atlanıyor.;En yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+İnce karda kaymadan yürünmez.;İnce karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Şiddetli kar fırtınasında dışarıda donuldu.;Şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Kırmızı kanalda hemen batılıyor.;Kırmızı kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Yalnız yazın bu sahilde rahatça yüzülür.;Yalnız yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Dünya şiddetli kar fırtınasında dışarıda donuldu.;Dünya şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+3. boğaz havasında çok güzel yürünür.;3. boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Bugün hava güzelken daha çok dışarı çıkılır.;Bugün hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+ABD uçak gemisinin güvertesinden denize atlandı.;ABD uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Bir olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Bir olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Kadınlar yarış pistinde son turda hızlanılır.;Kadınlar yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Ve konser alanında coşkuyla dans edildi.;Ve konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Kütüphanede fısıltıyla bile konuşulmaz.;Kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+6 otobüs yolda kalınca soğukta donuldu.;6 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Uygulama biyolojik laboratuvarda steril ortamda çalışıldı.;Uygulama biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Özellikle yaz gecelerinde balkonda uyunur.;Özellikle yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Çocuk yatılı okulda erkenden uyunur.;Çocuk yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+İnsan gençken daha çok eğlenilir.;İnsan gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Burada yemekten sonra biraz dinlenilir.;Burada yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Bu volkanik gölde asitli suya kesinlikle girilmez.;Bu volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Bir yaz kampında derin nehirlere atlanıyor.;Bir yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Dubai formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Dubai formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Baloda saatlerce dans edildi.;Baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Bu sıcak yaz günlerinde gölgede uzanılır.;Bu sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+4- yatılı okulda erkenden uyunur.;4- yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Hava yoğun kar yağışında kulübenin dışında çabuk donulur.;Hava yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Yeni yıl sabahında geç uyunur.;Yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Ancak kışın bu köyde erken yatılır.;Ancak kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Ama yaz akşamları sahilde keyifle yürünür.;Ama yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+• karla kaplı yollarda dikkatli yürünür.;• karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+Sevgi yalnızken daha çok büyünür.;Sevgi yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Uçak uzun uçuşlarda rahatça uyunur.;Uçak uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Yazın bu sahilde rahatça yüzülür.;Yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Özel yüzme havuzunda kurallara uygun şekilde yüzülür.;Özel yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Yeni formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Yeni formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Çok uzun uçuşlarda rahatça uyunur.;Çok uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Daha gençken daha çok eğlenilir.;Daha gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Bir yeni bir şey öğrenilince mutlu olunur.;Bir yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+· karla kaplı yollarda dikkatli yürünür.;· karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+İnsanlar yaşlanınca daha erken yatılır.;İnsanlar yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Her sene bir yaş daha büyünür.;Her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Bodrum şehir merkezinde gece geç saatlere kadar yürünür.;Bodrum şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Yarış deniz kenarında sabah erken saatte koşulur.;Yarış deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+5- stresli zamanlarda daha çok sigara içilir.;5- stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+İşte kışın bu gölde buz üstünde yürünür.;İşte kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Alışınca çok gürültülü ortamlarda bile uyunur.;Alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Her yeni yıl sabahında geç uyunur.;Her yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Kişi yeni bir şey öğrenilince mutlu olunur.;Kişi yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Yarışın son metresinde hızla koşuldu.;Yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+</s> araştırma projesi için gece boyunca çalışıldı.;</s> araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Maraton deniz kenarında sabah erken saatte koşulur.;Maraton deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Modern biyolojik laboratuvarda steril ortamda çalışıldı.;Modern biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Yamaç paraşütüyle uçurumdan atlandı.;Yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Çocuklar alışınca çok gürültülü ortamlarda bile uyunur.;Çocuklar alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Antalya formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Antalya formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Boğaz havasında çok güzel yürünür.;Boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+4- akıntılı sularda yüzülmez.;4- akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Maç sabah okul bahçesinde koşuldu.;Maç sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Aşk dertsizken daha çok gülünür.;Aşk dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Parkurda engellerin üzerinden atlanır.;Parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Birçok olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Birçok olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Mücadele yarışın son metresinde hızla koşuldu.;Mücadele yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+2. ormanlık alanda dikkatlice koşulur.;2. ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Son yaz akşamları sahilde keyifle yürünür.;Son yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Oyun şehir parkında sabah erken saatlerde koşulur.;Oyun şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Ayrıca stresli zamanlarda daha çok sigara içilir.;Ayrıca stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+3 uçak gemisinin güvertesinden denize atlandı.;3 uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Bu araştırma projesi için gece boyunca çalışıldı.;Bu araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+• akıntılı sularda yüzülmez.;• akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+İnsanlar şiddetli kar fırtınasında dışarıda donuldu.;İnsanlar şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Yeni bir şey öğrenilince mutlu olunur.;Yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Şimdi hava güzelken daha çok dışarı çıkılır.;Şimdi hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Yine düğün salonunda sabaha kadar dans edildi.;Yine düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Sadece üniversite kütüphanesinde sessizce çalışıldı.;Sadece üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Yağmur yağınca şemsiye ile yürünür.;Yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+PKK yeraltı sığınağında haftalarca mahsur kalındı.;PKK yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Eski köy yolunda tozlu toprakta yürünür.;Eski köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Adam yamaç paraşütüyle uçurumdan atlandı.;Adam yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Hızlı parkurda engellerin üzerinden atlanır.;Hızlı parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Ayrıca uzun uçuşlarda rahatça uyunur.;Ayrıca uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Şehir parkında sabah erken saatlerde koşulur.;Şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Yaşam dertsizken daha çok gülünür.;Yaşam dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Özellikle sıcak yaz günlerinde site havuzda serin serin yüzülür.;Özellikle sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Önemli sınav öncesi kütüphanede hummalıca çalışıldı.;Önemli sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Önce yamaç paraşütüyle uçurumdan atlandı.;Önce yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Uzun yaz gecelerinde balkonda uyunur.;Uzun yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Insanlar uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Insanlar uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Kadınlar olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Kadınlar olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Özellikle ormanlık alanda dikkatlice koşulur.;Özellikle ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Sınav haftasında gece geç saatlere kadar çalışıldı.;Sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+Ankara formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Ankara formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Serbest dalışta 10 metreden atlanıyor.;Serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Küçük düğün salonunda sabaha kadar dans edildi.;Küçük düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Ayrıca akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Ayrıca akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+İnsanlar mars kolonisinde basınçlı odalarda uyunur.;İnsanlar mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Bu volkanik gölde asitli suya kesinlikle girilmez.;Bu volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+7- yazın ince giyinilir.;7- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Çok yüksek kayalıklardan dikkatlice atlanıyor.;Çok yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+İnsanlar uzun uçuşlarda rahatça uyunur.;İnsanlar uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Yazın ince giyinilir.;Yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Özellikle volkanik gölde asitli suya kesinlikle girilmez.;Özellikle volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Çocuklar yaşlanınca daha erken yatılır.;Çocuklar yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Sonra konser alanında coşkuyla dans edildi.;Sonra konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Buda ortaçağ kalesinin zindanlarında soğukta donuldu.;Buda ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Ardından yamaç paraşütüyle uçurumdan atlandı.;Ardından yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Ve yazın bu sahilde rahatça yüzülür.;Ve yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Hiç nükleer santralde radyasyon alanlarına girilmez.;Hiç nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Kişi uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Kişi uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Bu sabah okul bahçesinde koşuldu.;Bu sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Ve sıcak yaz günlerinde gölgede uzanılır.;Ve sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Çocuklar uzun uçuşlarda rahatça uyunur.;Çocuklar uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Aşk yalnızken daha çok büyünür.;Aşk yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Bu yemekten sonra biraz dinlenilir.;Bu yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Egy üzgünken daha az konuşulur.;Egy üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Bu antrenman sahasında tempolu koşuldu.;Bu antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+İstanbul maratonda son kilometrede hızlı koşuldu.;İstanbul maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Soğuk yaz gecelerinde balkonda uyunur.;Soğuk yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+İlk sınav haftasında gece geç saatlere kadar çalışıldı.;İlk sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+10 otobüs yolda kalınca soğukta donuldu.;10 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+• kışın kalın giyinilir.;• kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Ardından baloda saatlerce dans edildi.;Ardından baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Halk ortaçağ kalesinin zindanlarında soğukta donuldu.;Halk ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+4. kanalda hemen batılıyor.;4. kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Eski lunaparkta hızlı trenlerde çığlık atılır.;Eski lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Yalnız yağmur yağınca şemsiye ile yürünür.;Yalnız yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+İkinci yarışın son metresinde hızla koşuldu.;İkinci yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Daha gençken daha çok eğlenilir.;Daha gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Ve yeni yıl sabahında geç uyunur.;Ve yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Gece köy meydanında davul zurna eşliğinde dans edildi.;Gece köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Ayrıca sıcak yaz günlerinde site havuzda serin serin yüzülür.;Ayrıca sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Çok uzun uçuşlarda rahatça uyunur.;Çok uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+İkinci yarış pistinde son turda hızlanılır.;İkinci yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Ha üzgünken daha az konuşulur.;Ha üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Uzun uçuşlarda rahatça uyunur.;Uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Ve sıcak yaz günlerinde site havuzda serin serin yüzülür.;Ve sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Ünlü festival alanında sabaha kadar dans edildi.;Ünlü festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Bu yeraltı mağarasında karanlıkta dikkatlice yürünür.;Bu yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Çocuklar uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Çocuklar uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Güzel para kazanınca rahat yaşanır.;Güzel para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Ani akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Ani akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+4. parkurda engellerin üzerinden atlanır.;4. parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Ayrıca köy meydanında davul zurna eşliğinde dans edildi.;Ayrıca köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+5. lunaparkta hızlı trenlerde çığlık atılır.;5. lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Büyük dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Büyük dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+İki uçak gemisinin güvertesinden denize atlandı.;İki uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+O yaz gecelerinde balkonda uyunur.;O yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Bu kayak merkezinde dik yamaçlardan atlanır.;Bu kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Dünya yalnızken daha çok büyünür.;Dünya yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Her sınav haftasında gece geç saatlere kadar çalışıldı.;Her sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+– karla kaplı yollarda dikkatli yürünür.;– karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+Ayrıca yaz aylarında bu plajda bol bol yüzülür.;Ayrıca yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Yine festival alanında sabaha kadar dans edildi.;Yine festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Kadınlar serbest dalışta 10 metreden atlanıyor.;Kadınlar serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Herkes karanlık odada kolayca uyunmaz.;Herkes karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Yarış yarışın son metresinde hızla koşuldu.;Yarış yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Ancak kışın bu gölde buz üstünde yürünür.;Ancak kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Sonra yamaç paraşütüyle uçurumdan atlandı.;Sonra yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Birçok araştırma projesi için gece boyunca çalışıldı.;Birçok araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+• stresli zamanlarda daha çok sigara içilir.;• stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Yalnızken daha çok büyünür.;Yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+İnsanlar uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;İnsanlar uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Çocuklar soğuk algınlığında bol bol uyunur.;Çocuklar soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Ancak sıcak yaz günlerinde site havuzda serin serin yüzülür.;Ancak sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Oyun serbest dalışta 10 metreden atlanıyor.;Oyun serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+O baloda saatlerce dans edildi.;O baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Klasik dağ yürüyüşünde dik yamaçlara tırmanılır.;Klasik dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Mercedes formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Mercedes formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+</s> dijital detoks kampında teknolojiden uzak yaşanır.;</s> dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Çocuklar şiddetli kar fırtınasında dışarıda donuldu.;Çocuklar şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Ayrıca konser alanında coşkuyla dans edildi.;Ayrıca konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Bir kayak merkezinde dik yamaçlardan atlanır.;Bir kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Ayrıca volkanik gölde asitli suya kesinlikle girilmez.;Ayrıca volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Birçok dağ yürüyüşünde dik yamaçlara tırmanılır.;Birçok dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+5- yaşlanınca daha erken yatılır.;5- yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+İnsanlar dertsizken daha çok gülünür.;İnsanlar dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Büyük sınav öncesi kütüphanede hummalıca çalışıldı.;Büyük sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Türk uçak gemisinin güvertesinden denize atlandı.;Türk uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Onlar ortaçağ kalesinin zindanlarında soğukta donuldu.;Onlar ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Ama yağmur yağınca şemsiye ile yürünür.;Ama yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Maratonda son kilometrede hızlı koşuldu.;Maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Öğle yemekten sonra biraz dinlenilir.;Öğle yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+3. akıntılı sularda yüzülmez.;3. akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Yeni köy yolunda tozlu toprakta yürünür.;Yeni köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Büyük para kazanınca rahat yaşanır.;Büyük para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Araştırma projesi için gece boyunca çalışıldı.;Araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Çocuklar dijital detoks kampında teknolojiden uzak yaşanır.;Çocuklar dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Yani uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Yani uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Uçak uzun uçuşlarda rahatça uyunur.;Uçak uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+2. antrenmanda son tur hızlı koşuldu.;2. antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Insan mars kolonisinde basınçlı odalarda uyunur.;Insan mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Ayrıca düğün salonunda sabaha kadar dans edildi.;Ayrıca düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Sabah alışınca çok gürültülü ortamlarda bile uyunur.;Sabah alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Çocuk karanlık odada kolayca uyunmaz.;Çocuk karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Bir volkanik gölde asitli suya kesinlikle girilmez.;Bir volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Bu düğün salonunda sabaha kadar dans edildi.;Bu düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Ayrıca yüzme havuzunda kurallara uygun şekilde yüzülür.;Ayrıca yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Ünlü düğün salonunda sabaha kadar dans edildi.;Ünlü düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Ama kışın bu gölde buz üstünde yürünür.;Ama kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Stresli zamanlarda daha çok sigara içilir.;Stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Ama para kazanınca rahat yaşanır.;Ama para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Ünlü baloda saatlerce dans edildi.;Ünlü baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Demir karda kaymadan yürünmez.;Demir karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Ayrıca kütüphanede tam bir sessizlik içinde çalışıldı.;Ayrıca kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+İnsanlar yeni bir şey öğrenilince mutlu olunur.;İnsanlar yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Birçok kayak merkezinde dik yamaçlardan atlanır.;Birçok kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Ardından plajda güneş altında uzun süre yatılıyor.;Ardından plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Çocuklar yatılı okulda erkenden uyunur.;Çocuklar yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Sezon final döneminde eski kütüphanede çalışıldı.;Sezon final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+5. kanalda hemen batılıyor.;5. kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+2- yazın ince giyinilir.;2- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+5- kışın kalın giyinilir.;5- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Kara karda kaymadan yürünmez.;Kara karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Amerika her sene bir yaş daha büyünür.;Amerika her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Şehir şiddetli kar fırtınasında dışarıda donuldu.;Şehir şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+2. parkurda engellerin üzerinden atlanır.;2. parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Oyun sabah okul bahçesinde koşuldu.;Oyun sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Ardından yarış pistinde son turda hızlanılır.;Ardından yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Köy yolunda tozlu toprakta yürünür.;Köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Büyük olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Büyük olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Gece yoğun kar yağışında kulübenin dışında çabuk donulur.;Gece yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Çoğu kayak merkezinde dik yamaçlardan atlanır.;Çoğu kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Son sınav öncesi kütüphanede hummalıca çalışıldı.;Son sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+2- yaşlanınca daha erken yatılır.;2- yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+3. antrenmanda son tur hızlı koşuldu.;3. antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Derinlerde uzun süre çalışıldı.;Derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+2- kışın kalın giyinilir.;2- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Büyük akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Büyük akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Bir nükleer santralde radyasyon alanlarına girilmez.;Bir nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Yine yaz aylarında bu plajda bol bol yüzülür.;Yine yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Yalnız kışın bu köyde erken yatılır.;Yalnız kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Özellikle hava güzelken daha çok dışarı çıkılır.;Özellikle hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Yeşil mercan resifinde renkli balıklarla yüzülür.;Yeşil mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Uzun boğaz havasında çok güzel yürünür.;Uzun boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Kadınlar plajda güneş altında uzun süre yatılıyor.;Kadınlar plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Her dağ yürüyüşünde dik yamaçlara tırmanılır.;Her dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Üçüncü antrenman sahasında tempolu koşuldu.;Üçüncü antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Türk yaz kampında derin nehirlere atlanıyor.;Türk yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Büyük ormanlık alanda dikkatlice koşulur.;Büyük ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Öğrenciler dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Öğrenciler dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Kız yatılı okulda erkenden uyunur.;Kız yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Demir antarktika'da -50 derecede hemen donulur.;Demir antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Etkinlik köy meydanında davul zurna eşliğinde dans edildi.;Etkinlik köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+İnsan uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;İnsan uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+İnsanlar uzun uçuşlarda rahatça uyunur.;İnsanlar uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Köy meydanında davul zurna eşliğinde dans edildi.;Köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Özellikle yaz akşamları sahilde keyifle yürünür.;Özellikle yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+İnsan kışın bu gölde buz üstünde yürünür.;İnsan kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+İlk yarış pistinde son turda hızlanılır.;İlk yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Özellikle dağ yürüyüşünde dik yamaçlara tırmanılır.;Özellikle dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Ayrıca festival alanında sabaha kadar dans edildi.;Ayrıca festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Yalnız yorgunken daha çabuk uyunur.;Yalnız yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Csak üzgünken daha az konuşulur.;Csak üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Test antrenman sahasında tempolu koşuldu.;Test antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Ankara orman yangını söndürülürken duman altında kalındı.;Ankara orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Eskişehir maratonda son kilometrede hızlı koşuldu.;Eskişehir maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Festival şehir parkında sabah erken saatlerde koşulur.;Festival şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Serada nemli koridorlarda yürünür.;Serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Aşk sevilince daha çok gülümsenir.;Aşk sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+En yüksek kayalıklardan dikkatlice atlanıyor.;En yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Büyük opera binasında akustik test sırasında dans edildi.;Büyük opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+İstanbul opera binasında akustik test sırasında dans edildi.;İstanbul opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Modern stadyumda yapay çimde hızlı koşulur.;Modern stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+2 uçak gemisinin güvertesinden denize atlandı.;2 uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Ardından köy meydanında davul zurna eşliğinde dans edildi.;Ardından köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Çünkü kışın bu köyde erken yatılır.;Çünkü kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Nagyon üzgünken daha az konuşulur.;Nagyon üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+6- kışın kalın giyinilir.;6- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Herkes soğuk algınlığında bol bol uyunur.;Herkes soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+O serada nemli koridorlarda yürünür.;O serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+İnsanlar yeraltı mağarasında karanlıkta dikkatlice yürünür.;İnsanlar yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Bir nükleer santralde radyasyon alanlarına girilmez.;Bir nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Kütüphanede tam bir sessizlik içinde çalışıldı.;Kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Büyük baloda saatlerce dans edildi.;Büyük baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Yaz aylarında bu plajda bol bol yüzülür.;Yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Yine yarışın son metresinde hızla koşuldu.;Yine yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Ancak alışınca çok gürültülü ortamlarda bile uyunur.;Ancak alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Öğrenciler yaz tatilinde bol bol uyunur.;Öğrenciler yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Çocuklar soğuk algınlığında bol bol uyunur.;Çocuklar soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Karla kaplı yollarda dikkatli yürünür.;Karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+İstanbul şehir merkezinde gece geç saatlere kadar yürünür.;İstanbul şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+O yeraltı mağarasında karanlıkta dikkatlice yürünür.;O yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Beyaz kanalda hemen batılıyor.;Beyaz kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Büyük karla kaplı yollarda dikkatli yürünür.;Büyük karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+</s> yaz tatilinde bol bol uyunur.;</s> yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Ve yaz akşamları sahilde keyifle yürünür.;Ve yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Hele yazın bu sahilde rahatça yüzülür.;Hele yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+</s> yeni yıl sabahında geç uyunur.;</s> yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Herkes yeni bir şey öğrenilince mutlu olunur.;Herkes yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Sabah yağmur yağınca şemsiye ile yürünür.;Sabah yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Şu serada nemli koridorlarda yürünür.;Şu serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Bir sabah okul bahçesinde koşuldu.;Bir sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Yüksek orman yangını söndürülürken duman altında kalındı.;Yüksek orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Yaz gecelerinde balkonda uyunur.;Yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Çok gençken daha çok eğlenilir.;Çok gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Çok sıcak yaz günlerinde gölgede uzanılır.;Çok sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Bu ortaçağ kalesinin zindanlarında soğukta donuldu.;Bu ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Bu yeraltı sığınağında haftalarca mahsur kalındı.;Bu yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Roma şehir merkezinde gece geç saatlere kadar yürünür.;Roma şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Ankara şehir merkezinde gece geç saatlere kadar yürünür.;Ankara şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Çünkü volkanik gölde asitli suya kesinlikle girilmez.;Çünkü volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Herkes kışın bu gölde buz üstünde yürünür.;Herkes kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Ancak yağmur yağınca şemsiye ile yürünür.;Ancak yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Güzel yaz akşamları sahilde keyifle yürünür.;Güzel yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Çift biyolojik laboratuvarda steril ortamda çalışıldı.;Çift biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Çocuk yaz tatilinde bol bol uyunur.;Çocuk yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Bir otobüs yolda kalınca soğukta donuldu.;Bir otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Aslan dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Aslan dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Bir yeni yıl sabahında geç uyunur.;Bir yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+5- yazın ince giyinilir.;5- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Adam mars kolonisinde basınçlı odalarda uyunur.;Adam mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Yeni araştırma projesi için gece boyunca çalışıldı.;Yeni araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Sadece yüzme havuzunda kurallara uygun şekilde yüzülür.;Sadece yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Büyük orman yangını söndürülürken duman altında kalındı.;Büyük orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Bir dijital detoks kampında teknolojiden uzak yaşanır.;Bir dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Yarı maratonda son kilometrede hızlı koşuldu.;Yarı maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Özel biyolojik laboratuvarda steril ortamda çalışıldı.;Özel biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Ve ortaçağ kalesinin zindanlarında soğukta donuldu.;Ve ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Bu stresli zamanlarda daha çok sigara içilir.;Bu stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+İnsanlar plajda güneş altında uzun süre yatılıyor.;İnsanlar plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Bir lunaparkta hızlı trenlerde çığlık atılır.;Bir lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Sonra üniversite kütüphanesinde sessizce çalışıldı.;Sonra üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Spor kumsalda sabah erken saatlerde koşulur.;Spor kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Tur deniz kenarında sabah erken saatte koşulur.;Tur deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Gece şiddetli kar fırtınasında dışarıda donuldu.;Gece şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Çalışma kumsalda sabah erken saatlerde koşulur.;Çalışma kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Antalya kayak merkezinde dik yamaçlardan atlanır.;Antalya kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Ama kışın bu gölde buz üstünde yürünür.;Ama kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Ve antarktika'da -50 derecede hemen donulur.;Ve antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Kongre şehir parkında sabah erken saatlerde koşulur.;Kongre şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Eski yazlık evde sabahları geç uyunur.;Eski yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+3 otobüs yolda kalınca soğukta donuldu.;3 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Ve kışın bu gölde buz üstünde yürünür.;Ve kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Amerika yaz kampında derin nehirlere atlanıyor.;Amerika yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Oyun kumsalda sabah erken saatlerde koşulur.;Oyun kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Akşam festival alanında sabaha kadar dans edildi.;Akşam festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Yüzme havuzunda kurallara uygun şekilde yüzülür.;Yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Sıcak yaz günlerinde gölgede uzanılır.;Sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Ayrıca uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Ayrıca uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Maraton şehir parkında sabah erken saatlerde koşulur.;Maraton şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Bir karda kaymadan yürünmez.;Bir karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Kara mercan resifinde renkli balıklarla yüzülür.;Kara mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Ruh yalnızken daha çok büyünür.;Ruh yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Tüm kütüphanede tam bir sessizlik içinde çalışıldı.;Tüm kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Halk dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Halk dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+İkinci final döneminde eski kütüphanede çalışıldı.;İkinci final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Lunaparkta hızlı trenlerde çığlık atılır.;Lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Özellikle kışın kalın giyinilir.;Özellikle kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Daha hava güzelken daha çok dışarı çıkılır.;Daha hava güzelken herkes tarafından daha çok dışarı çıkılır.;∅;herkes tarafından;çıkılır;passives
+Okul final döneminde eski kütüphanede çalışıldı.;Okul final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Kanalda hemen batılıyor.;Kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Görüş yarışın son metresinde hızla koşuldu.;Görüş yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Öğrenciler kütüphanede tam bir sessizlik içinde çalışıldı.;Öğrenciler kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Çok derinlerde uzun süre çalışıldı.;Çok derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Kitap kütüphanede fısıltıyla bile konuşulmaz.;Kitap kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Yalnız kışın bu gölde buz üstünde yürünür.;Yalnız kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Çoğu olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Çoğu olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+En yoğun kar yağışında kulübenin dışında çabuk donulur.;En yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+4- kışın kalın giyinilir.;4- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Bir yaz akşamları sahilde keyifle yürünür.;Bir yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Daha sıcak yaz günlerinde site havuzda serin serin yüzülür.;Daha sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Özellikle yaz aylarında bu plajda bol bol yüzülür.;Özellikle yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Gece festival alanında sabaha kadar dans edildi.;Gece festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+Kadınlar dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Kadınlar dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Bugün kütüphanede tam bir sessizlik içinde çalışıldı.;Bugün kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+İlk alışınca çok gürültülü ortamlarda bile uyunur.;İlk alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Maç deniz kenarında sabah erken saatte koşulur.;Maç deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+– yaşlanınca daha erken yatılır.;– yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+İnsanlar kışın bu gölde buz üstünde yürünür.;İnsanlar kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Ve sınav öncesi kütüphanede hummalıca çalışıldı.;Ve sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Yeşil kanalda hemen batılıyor.;Yeşil kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+2- boğaz havasında çok güzel yürünür.;2- boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Aynı serada nemli koridorlarda yürünür.;Aynı serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Ağır orman yangını söndürülürken duman altında kalındı.;Ağır orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Kadınlar gençken daha çok eğlenilir.;Kadınlar gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Ayrıca baloda saatlerce dans edildi.;Ayrıca baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Çok derinlerde uzun süre çalışıldı.;Çok derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+İnsan mars kolonisinde basınçlı odalarda uyunur.;İnsan mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Gece baloda saatlerce dans edildi.;Gece baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Herkes yeni bir şey öğrenilince mutlu olunur.;Herkes yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Ve yüksek kayalıklardan dikkatlice atlanıyor.;Ve yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+3- yazın ince giyinilir.;3- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Öğrenciler plajda güneş altında uzun süre yatılıyor.;Öğrenciler plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Bir serada nemli koridorlarda yürünür.;Bir serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Bir kütüphanede fısıltıyla bile konuşulmaz.;Bir kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+3- kışın kalın giyinilir.;3- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Yeni stadyumda yapay çimde hızlı koşulur.;Yeni stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Ve köy yolunda tozlu toprakta yürünür.;Ve köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Ormanlık alanda dikkatlice koşulur.;Ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Dağ yürüyüşünde dik yamaçlara tırmanılır.;Dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Olay sabah okul bahçesinde koşuldu.;Olay sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Ayrıca biyolojik laboratuvarda steril ortamda çalışıldı.;Ayrıca biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+İlk antrenman sahasında tempolu koşuldu.;İlk antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Golf deniz kenarında sabah erken saatte koşulur.;Golf deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Herkes sevilince daha çok gülümsenir.;Herkes sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Para kazanınca rahat yaşanır.;Para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Akşam yemekten sonra biraz dinlenilir.;Akşam yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Etkinlik şehir parkında sabah erken saatlerde koşulur.;Etkinlik şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Çocuklar plajda güneş altında uzun süre yatılıyor.;Çocuklar plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Ancak kışın bu gölde buz üstünde yürünür.;Ancak kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+2. karla kaplı yollarda dikkatli yürünür.;2. karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+Uzun dağ yürüyüşünde dik yamaçlara tırmanılır.;Uzun dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Kadınlar yazın bu gölde serinlemek için yüzülür.;Kadınlar yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Yine boğaz havasında çok güzel yürünür.;Yine boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+İlk final döneminde eski kütüphanede çalışıldı.;İlk final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Milli stadyumda yapay çimde hızlı koşulur.;Milli stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Daha uzun uçuşlarda rahatça uyunur.;Daha uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Herkes mars kolonisinde basınçlı odalarda uyunur.;Herkes mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Herkes kışın bu gölde buz üstünde yürünür.;Herkes kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Antrenman sahasında tempolu koşuldu.;Antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Eski yeraltı sığınağında haftalarca mahsur kalındı.;Eski yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Még üzgünken daha az konuşulur.;Még üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Mert üzgünken daha az konuşulur.;Mert üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Fakat uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Fakat uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Yine final döneminde eski kütüphanede çalışıldı.;Yine final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Çoğu dağ yürüyüşünde dik yamaçlara tırmanılır.;Çoğu dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Bu olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Bu olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Kadınlar maratonda son kilometrede hızlı koşuldu.;Kadınlar maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Yalnız kışın bu gölde buz üstünde yürünür.;Yalnız kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Plajda güneş altında uzun süre yatılıyor.;Plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Neden soğuk algınlığında bol bol uyunur.;Neden soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Ayrıca yazın ince giyinilir.;Ayrıca yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Hızlı akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Hızlı akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Yeraltı mağarasında karanlıkta dikkatlice yürünür.;Yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Daha derinlerde uzun süre çalışıldı.;Daha derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Türkiye yaz kampında derin nehirlere atlanıyor.;Türkiye yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Merkezi biyolojik laboratuvarda steril ortamda çalışıldı.;Merkezi biyolojik laboratuvarda bilim insanları tarafından steril ortamda çalışıldı.;∅;bilim insanları tarafından;çalışıldı;passives
+Ağır karda kaymadan yürünmez.;Ağır karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Bu nükleer santralde radyasyon alanlarına girilmez.;Bu nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+• yaşlanınca daha erken yatılır.;• yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Son antrenman sahasında tempolu koşuldu.;Son antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+En sıcak yaz günlerinde gölgede uzanılır.;En sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Herkes dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Herkes dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Her yazın bu gölde serinlemek için yüzülür.;Her yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Ve uzun uçuşlarda rahatça uyunur.;Ve uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Spor deniz kenarında sabah erken saatte koşulur.;Spor deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+İki kayak merkezinde dik yamaçlardan atlanır.;İki kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Yine yazlık evde sabahları geç uyunur.;Yine yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Ardından üniversite kütüphanesinde sessizce çalışıldı.;Ardından üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Bu derinlerde uzun süre çalışıldı.;Bu derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Yeni opera binasında akustik test sırasında dans edildi.;Yeni opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Bu kütüphanede fısıltıyla bile konuşulmaz.;Bu kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Kışın bu gölde buz üstünde yürünür.;Kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Konser alanında coşkuyla dans edildi.;Konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Son yarışın son metresinde hızla koşuldu.;Son yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Açık ormanlık alanda dikkatlice koşulur.;Açık ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Türkiye her sene bir yaş daha büyünür.;Türkiye her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Bu sınav haftasında gece geç saatlere kadar çalışıldı.;Bu sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+7- kışın kalın giyinilir.;7- kışın insanlar tarafından kalın giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Ülke her sene bir yaş daha büyünür.;Ülke her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+3. kanalda hemen batılıyor.;3. kanalda düşenler tarafından hemen batılıyor.;∅;düşenler tarafından;batılıyor;passives
+Aki üzgünken daha az konuşulur.;Aki üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Ayrıca şehir merkezinde gece geç saatlere kadar yürünür.;Ayrıca şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Düğün salonunda sabaha kadar dans edildi.;Düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Çünkü kışın bu gölde buz üstünde yürünür.;Çünkü kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+Onlar mars kolonisinde basınçlı odalarda uyunur.;Onlar mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Uçak yamaç paraşütüyle uçurumdan atlandı.;Uçak yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Bir boğaz havasında çok güzel yürünür.;Bir boğaz havasında insanlar tarafından çok güzel yürünür.;∅;insanlar tarafından;yürünür;passives
+Nükleer santralde radyasyon alanlarına girilmez.;Nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Bir araştırma projesi için gece boyunca çalışıldı.;Bir araştırma projesi için asistanlar tarafından gece boyunca çalışıldı.;∅;asistanlar tarafından;çalışıldı;passives
+Ardından festival alanında sabaha kadar dans edildi.;Ardından festival alanında gençler tarafından sabaha kadar dans edildi.;∅;gençler tarafından;dans edildi;passives
+İşte kışın bu gölde buz üstünde yürünür.;İşte kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Bodrum kayak merkezinde dik yamaçlardan atlanır.;Bodrum kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Ortaçağ kalesinin zindanlarında soğukta donuldu.;Ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Bu baloda saatlerce dans edildi.;Bu baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Ve kışın bu gölde buz üstünde yürünür.;Ve kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Ayrıca antarktika'da -50 derecede hemen donulur.;Ayrıca antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Dost para kazanınca rahat yaşanır.;Dost para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Kadın her sene bir yaş daha büyünür.;Kadın her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Yine orman yangını söndürülürken duman altında kalındı.;Yine orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Bugün antrenman sahasında tempolu koşuldu.;Bugün antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+İki yarışın son metresinde hızla koşuldu.;İki yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Kişi uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Kişi uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+2. sınav haftasında gece geç saatlere kadar çalışıldı.;2. sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+Herkes dertsizken daha çok gülünür.;Herkes dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Çok alışınca çok gürültülü ortamlarda bile uyunur.;Çok alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+O kütüphanede fısıltıyla bile konuşulmaz.;O kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+Bir yeraltı sığınağında haftalarca mahsur kalındı.;Bir yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Ve sıcak yaz günlerinde gölgede uzanılır.;Ve sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Ve uzun uçuşlarda rahatça uyunur.;Ve uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Uzun yaz gecelerinde balkonda uyunur.;Uzun yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Insan uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Insan uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Yüksek akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Yüksek akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Sadece yazın bu gölde serinlemek için yüzülür.;Sadece yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Kadın yeraltı mağarasında karanlıkta dikkatlice yürünür.;Kadın yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Özellikle final döneminde eski kütüphanede çalışıldı.;Özellikle final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Kumsalda sabah erken saatlerde koşulur.;Kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Kapalı yüzme havuzunda kurallara uygun şekilde yüzülür.;Kapalı yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Az üzgünken daha az konuşulur.;Az üzgünken insanlar tarafından daha az konuşulur.;∅;insanlar tarafından;konuşulur;passives
+Insan sevilince daha çok gülümsenir.;Insan sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Sevgi sevilince daha çok gülümsenir.;Sevgi sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Dijital detoks kampında teknolojiden uzak yaşanır.;Dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Antrenmanda son tur hızlı koşuldu.;Antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Özellikle yazın bu gölde serinlemek için yüzülür.;Özellikle yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Teknik antrenman sahasında tempolu koşuldu.;Teknik antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Yalnız yaz aylarında bu plajda bol bol yüzülür.;Yalnız yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+• yeni bir şey öğrenilince mutlu olunur.;• yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Yaşlanınca daha erken yatılır.;Yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Kuzey antarktika'da -50 derecede hemen donulur.;Kuzey antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Bu yazlık evde sabahları geç uyunur.;Bu yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Dünya sevilince daha çok gülümsenir.;Dünya sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+İnsanlar dijital detoks kampında teknolojiden uzak yaşanır.;İnsanlar dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Ama alışınca çok gürültülü ortamlarda bile uyunur.;Ama alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Bizim yazlık evde sabahları geç uyunur.;Bizim yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Antalya yaz kampında derin nehirlere atlanıyor.;Antalya yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Bebek soğuk algınlığında bol bol uyunur.;Bebek soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Çalışma kütüphanede tam bir sessizlik içinde çalışıldı.;Çalışma kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+İnsan yalnızken daha çok büyünür.;İnsan yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Uluslararası stadyumda yapay çimde hızlı koşulur.;Uluslararası stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Küçük köy yolunda tozlu toprakta yürünür.;Küçük köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Akşam yemekten sonra biraz dinlenilir.;Akşam yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Merkezi yüzme havuzunda kurallara uygun şekilde yüzülür.;Merkezi yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Bu sıcak yaz günlerinde site havuzda serin serin yüzülür.;Bu sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Hiç karda kaymadan yürünmez.;Hiç karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Ankara her sene bir yaş daha büyünür.;Ankara her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Kişi karanlık odada kolayca uyunmaz.;Kişi karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Çocuklar uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Çocuklar uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Soğuk algınlığında bol bol uyunur.;Soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Bir para kazanınca rahat yaşanır.;Bir para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Bu yoğun kar yağışında kulübenin dışında çabuk donulur.;Bu yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Deniz antarktika'da -50 derecede hemen donulur.;Deniz antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Gece yamaç paraşütüyle uçurumdan atlandı.;Gece yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Ve yemekten sonra biraz dinlenilir.;Ve yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+Büyük düğün salonunda sabaha kadar dans edildi.;Büyük düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+İlk olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;İlk olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Özellikle uzun uçuşlarda rahatça uyunur.;Özellikle uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Yarış pistinde son turda hızlanılır.;Yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Ama kütüphanede fısıltıyla bile konuşulmaz.;Ama kütüphanede öğrenciler tarafından fısıltıyla bile konuşulmaz.;∅;öğrenciler tarafından;konuşulmaz;passives
+İstanbul formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;İstanbul formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Yarış şehir parkında sabah erken saatlerde koşulur.;Yarış şehir parkında halk tarafından sabah erken saatlerde koşulur.;∅;halk tarafından;koşulur;passives
+Ben yazın bu gölde serinlemek için yüzülür.;Ben yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+2018 yeni yıl sabahında geç uyunur.;2018 yeni yıl sabahında eğlenenler tarafından geç uyunur.;∅;eğlenenler tarafından;uyunur;passives
+Son antrenmanda son tur hızlı koşuldu.;Son antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Bu üniversite kütüphanesinde sessizce çalışıldı.;Bu üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Sadece yazın bu sahilde rahatça yüzülür.;Sadece yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Çocuklar gençken daha çok eğlenilir.;Çocuklar gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Her kayak merkezinde dik yamaçlardan atlanır.;Her kayak merkezinde kayakçılar tarafından dik yamaçlardan atlanır.;∅;kayakçılar tarafından;atlanır;passives
+Ve derinlerde uzun süre çalışıldı.;Ve derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Özellikle sıcak yaz günlerinde gölgede uzanılır.;Özellikle sıcak yaz günlerinde insanlar tarafından gölgede uzanılır.;∅;insanlar tarafından;uzanılır;passives
+Rus uçak gemisinin güvertesinden denize atlandı.;Rus uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+• yazın ince giyinilir.;• yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Insan yalnızken daha çok büyünür.;Insan yalnızken yalnızlar tarafından daha çok büyünür.;∅;yalnızlar tarafından;büyünür;passives
+Sonra konser alanında coşkuyla dans edildi.;Sonra konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Ama uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Ama uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Son sınav haftasında gece geç saatlere kadar çalışıldı.;Son sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+Antarktika'da -50 derecede hemen donulur.;Antarktika'da araştırmacılar tarafından -50 derecede hemen donulur.;∅;araştırmacılar tarafından;donulur;passives
+Kışın bu gölde buz üstünde yürünür.;Kışın balıkçılar tarafından bu gölde buz üstünde yürünür.;∅;balıkçılar tarafından;yürünür;passives
+İnsan uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;İnsan uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+Dünya dijital detoks kampında teknolojiden uzak yaşanır.;Dünya dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Yaz kampında derin nehirlere atlanıyor.;Yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Bu dağ yürüyüşünde dik yamaçlara tırmanılır.;Bu dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Bebek karanlık odada kolayca uyunmaz.;Bebek karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Ardından konser alanında coşkuyla dans edildi.;Ardından konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+5. antrenmanda son tur hızlı koşuldu.;5. antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Akıntılı sularda yüzülmez.;Akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Büyük mercan resifinde renkli balıklarla yüzülür.;Büyük mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Çocuklar yatılı okulda erkenden uyunur.;Çocuklar yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Çocuklar karanlık odada kolayca uyunmaz.;Çocuklar karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Bu orman yangını söndürülürken duman altında kalındı.;Bu orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Bir karanlık odada kolayca uyunmaz.;Bir karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Kuru yaz gecelerinde balkonda uyunur.;Kuru yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Halk yüzme havuzunda kurallara uygun şekilde yüzülür.;Halk yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+İnsan yaşlanınca daha erken yatılır.;İnsan yaşlanınca insanlar tarafından daha erken yatılır.;∅;insanlar tarafından;yatılır;passives
+Otobüs yolda kalınca soğukta donuldu.;Otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+İstanbul her sene bir yaş daha büyünür.;İstanbul her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+İngiliz yeraltı sığınağında haftalarca mahsur kalındı.;İngiliz yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Bu parkurda engellerin üzerinden atlanır.;Bu parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+En derinlerde uzun süre çalışıldı.;En derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+İnsanlar karanlık odada kolayca uyunmaz.;İnsanlar karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Start serbest dalışta 10 metreden atlanıyor.;Start serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Hayat sevilince daha çok gülümsenir.;Hayat sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+İkinci serbest dalışta 10 metreden atlanıyor.;İkinci serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Ana köy yolunda tozlu toprakta yürünür.;Ana köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+4 uçak gemisinin güvertesinden denize atlandı.;4 uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Yine şehir merkezinde gece geç saatlere kadar yürünür.;Yine şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Bir dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Bir dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Yine köy yolunda tozlu toprakta yürünür.;Yine köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+İnsanlar sevilince daha çok gülümsenir.;İnsanlar sevilince sevenler tarafından daha çok gülümsenir.;∅;sevenler tarafından;gülümsenir;passives
+Büyük akıntılı sularda yüzülmez.;Büyük akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Kar yoğun kar yağışında kulübenin dışında çabuk donulur.;Kar yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+2. akıntılı sularda yüzülmez.;2. akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Orman yangını söndürülürken duman altında kalındı.;Orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+En şiddetli kar fırtınasında dışarıda donuldu.;En şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Ardından konser alanında coşkuyla dans edildi.;Ardından konser alanında hayranlar tarafından coşkuyla dans edildi.;∅;hayranlar tarafından;dans edildi;passives
+Çocuk yatılı okulda erkenden uyunur.;Çocuk yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Herkes yazın bu gölde serinlemek için yüzülür.;Herkes yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Sonra köy meydanında davul zurna eşliğinde dans edildi.;Sonra köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Sadece yağmur yağınca şemsiye ile yürünür.;Sadece yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Bir dağ yürüyüşünde dik yamaçlara tırmanılır.;Bir dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+Kırmızı mercan resifinde renkli balıklarla yüzülür.;Kırmızı mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Ardından köy meydanında davul zurna eşliğinde dans edildi.;Ardından köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Birçok nükleer santralde radyasyon alanlarına girilmez.;Birçok nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Her volkanik gölde asitli suya kesinlikle girilmez.;Her volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Maç kumsalda sabah erken saatlerde koşulur.;Maç kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Opera binasında akustik test sırasında dans edildi.;Opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Yeraltı sığınağında haftalarca mahsur kalındı.;Yeraltı sığınağında insanlar tarafından haftalarca mahsur kalındı.;∅;insanlar tarafından;kalındı;passives
+Half maratonda son kilometrede hızlı koşuldu.;Half maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Yarış kumsalda sabah erken saatlerde koşulur.;Yarış kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Herkes uzay istasyonunda yerçekimsiz ortama alışılınca rahatça uyunur.;Herkes uzay istasyonunda yerçekimsiz ortama alışılınca astronotlar tarafından rahatça uyunur.;∅;astronotlar tarafından;uyunur;passives
+Yine üniversite kütüphanesinde sessizce çalışıldı.;Yine üniversite kütüphanesinde öğrenciler tarafından sessizce çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Açık yüzme havuzunda kurallara uygun şekilde yüzülür.;Açık yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Kadınlar yaz kampında derin nehirlere atlanıyor.;Kadınlar yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Özellikle karla kaplı yollarda dikkatli yürünür.;Özellikle karla kaplı yollarda işe gidenler tarafından dikkatli yürünür.;∅;işe gidenler tarafından;yürünür;passives
+</s> mercan resifinde renkli balıklarla yüzülür.;</s> mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Hayat dertsizken daha çok gülünür.;Hayat dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+İnsan soğuk algınlığında bol bol uyunur.;İnsan soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Ünlü opera binasında akustik test sırasında dans edildi.;Ünlü opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Modern opera binasında akustik test sırasında dans edildi.;Modern opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Ankara yaz tatilinde bol bol uyunur.;Ankara yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Insan karanlık odada kolayca uyunmaz.;Insan karanlık odada çocuklar tarafından kolayca uyunmaz.;∅;çocuklar tarafından;uyunmaz;passives
+Yarış deniz kenarında sabah erken saatte koşulur.;Yarış deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Gençken daha çok eğlenilir.;Gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+Edirne maratonda son kilometrede hızlı koşuldu.;Edirne maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Ancak yaz aylarında bu plajda bol bol yüzülür.;Ancak yaz aylarında tatilciler tarafından bu plajda bol bol yüzülür.;∅;tatilciler tarafından;yüzülür;passives
+Bir sınav haftasında gece geç saatlere kadar çalışıldı.;Bir sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+4- yazın ince giyinilir.;4- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Eski stadyumda yapay çimde hızlı koşulur.;Eski stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Özellikle yazın bu sahilde rahatça yüzülür.;Özellikle yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Stadyumda yapay çimde hızlı koşulur.;Stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Mercedes yarış pistinde son turda hızlanılır.;Mercedes yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+İlk yarışın son metresinde hızla koşuldu.;İlk yarışın son metresinde maratoncular tarafından hızla koşuldu.;∅;maratoncular tarafından;koşuldu;passives
+Tesis yüzme havuzunda kurallara uygun şekilde yüzülür.;Tesis yüzme havuzunda yüzücüler tarafından kurallara uygun şekilde yüzülür.;∅;yüzücüler tarafından;yüzülür;passives
+Fransız opera binasında akustik test sırasında dans edildi.;Fransız opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Ve final döneminde eski kütüphanede çalışıldı.;Ve final döneminde öğrenciler tarafından eski kütüphanede çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Bir alışınca çok gürültülü ortamlarda bile uyunur.;Bir alışınca bebekler tarafından çok gürültülü ortamlarda bile uyunur.;∅;bebekler tarafından;uyunur;passives
+Ve derinlerde uzun süre çalışıldı.;Ve derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Çocuklar uzun uçuşlarda rahatça uyunur.;Çocuklar uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Dünya dertsizken daha çok gülünür.;Dünya dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Büyük yağmur yağınca şemsiye ile yürünür.;Büyük yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+En sıcak yaz günlerinde site havuzda serin serin yüzülür.;En sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Yalnız yazın bu gölde serinlemek için yüzülür.;Yalnız yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Bu yüksek kayalıklardan dikkatlice atlanıyor.;Bu yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Halk yeraltı mağarasında karanlıkta dikkatlice yürünür.;Halk yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Büyük kütüphanede tam bir sessizlik içinde çalışıldı.;Büyük kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+Sonra düğün salonunda sabaha kadar dans edildi.;Sonra düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Ve ormanlık alanda dikkatlice koşulur.;Ve ormanlık alanda sporcular tarafından dikkatlice koşulur.;∅;sporcular tarafından;koşulur;passives
+Çok yorgunken daha çabuk uyunur.;Çok yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Antalya maratonda son kilometrede hızlı koşuldu.;Antalya maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Avustralya formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Avustralya formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Bu yazlık evde sabahları geç uyunur.;Bu yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Ana stadyumda yapay çimde hızlı koşulur.;Ana stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Uçak gemisinin güvertesinden denize atlandı.;Uçak gemisinin güvertesinden denizciler tarafından denize atlandı.;∅;denizciler tarafından;atlandı;passives
+Çocuklar dağın zirvesine ulaşılınca sevinçle bağrılıyor.;Çocuklar dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+• kışın bu köyde erken yatılır.;• kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+6- yazın ince giyinilir.;6- yazın insanlar tarafından ince giyinilir.;∅;insanlar tarafından;giyinilir;passives
+Insanlar mars kolonisinde basınçlı odalarda uyunur.;Insanlar mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Üçüncü antrenmanda son tur hızlı koşuldu.;Üçüncü antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Ama yazın bu sahilde rahatça yüzülür.;Ama yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+Sıcak yaz günlerinde site havuzda serin serin yüzülür.;Sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Gece düğün salonunda sabaha kadar dans edildi.;Gece düğün salonunda davetliler tarafından sabaha kadar dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Bu stadyumda yapay çimde hızlı koşulur.;Bu stadyumda sporcular tarafından yapay çimde hızlı koşulur.;∅;sporcular tarafından;koşulur;passives
+Halk plajda güneş altında uzun süre yatılıyor.;Halk plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Her uzay mekiğinde yerçekimi olmayınca tuhaf uyunur.;Her uzay mekiğinde mürettebat tarafından yerçekimi olmayınca tuhaf uyunur.;∅;mürettebat tarafından;uyunur;passives
+Adana formula 1 pistinde yarış öncesi hızlı bir tur atıldı.;Adana formula 1 pistinde pilotlar tarafından yarış öncesi hızlı bir tur atıldı.;∅;pilotlar tarafından;atıldı;passives
+Uçak şiddetli kar fırtınasında dışarıda donuldu.;Uçak şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Bu lunaparkta hızlı trenlerde çığlık atılır.;Bu lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+Az para kazanınca rahat yaşanır.;Az para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Çoğu nükleer santralde radyasyon alanlarına girilmez.;Çoğu nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+İlk antrenmanda son tur hızlı koşuldu.;İlk antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Özellikle yoğun kar yağışında kulübenin dışında çabuk donulur.;Özellikle yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Kışın bu köyde erken yatılır.;Kışın köylüler tarafından bu köyde erken yatılır.;∅;köylüler tarafından;yatılır;passives
+Bir parkurda engellerin üzerinden atlanır.;Bir parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+4. antrenmanda son tur hızlı koşuldu.;4. antrenmanda sporcular tarafından son tur hızlı koşuldu.;∅;sporcular tarafından;koşuldu;passives
+Her parkurda engellerin üzerinden atlanır.;Her parkurda yarışmacılar tarafından engellerin üzerinden atlanır.;∅;yarışmacılar tarafından;atlanır;passives
+Bir yazlık evde sabahları geç uyunur.;Bir yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+Çocuklar plajda güneş altında uzun süre yatılıyor.;Çocuklar plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+– yorgunken daha çabuk uyunur.;– yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Büyük lunaparkta hızlı trenlerde çığlık atılır.;Büyük lunaparkta çocuklar tarafından hızlı trenlerde çığlık atılır.;∅;çocuklar tarafından;çığlık atılır;passives
+2 otobüs yolda kalınca soğukta donuldu.;2 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+İnsan yorgunken daha çabuk uyunur.;İnsan yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Yine yazın bu sahilde rahatça yüzülür.;Yine yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+En gençken daha çok eğlenilir.;En gençken insanlar tarafından daha çok eğlenilir.;∅;insanlar tarafından;eğlenilir;passives
+İlk dağ yürüyüşünde dik yamaçlara tırmanılır.;İlk dağ yürüyüşünde gezginler tarafından dik yamaçlara tırmanılır.;∅;gezginler tarafından;tırmanılır;passives
+İkinci antrenman sahasında tempolu koşuldu.;İkinci antrenman sahasında atletler tarafından tempolu koşuldu.;∅;atletler tarafından;koşuldu;passives
+Yine yaz akşamları sahilde keyifle yürünür.;Yine yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Türkiye yaz tatilinde bol bol uyunur.;Türkiye yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Çocuk uzay simülatöründe ağırlıksız ortama alışılınca rahatça uyunur.;Çocuk uzay simülatöründe adaylar tarafından ağırlıksız ortama alışılınca rahatça uyunur.;∅;adaylar tarafından;uyunur;passives
+İnsanlar soğuk algınlığında bol bol uyunur.;İnsanlar soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Bebek yatılı okulda erkenden uyunur.;Bebek yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+İnsanlar dağın zirvesine ulaşılınca sevinçle bağrılıyor.;İnsanlar dağın zirvesine tırmananlar tarafından sevinçle bağrılıyor.;∅;tırmananlar tarafından;bağrılıyor;passives
+Çocuklar mars kolonisinde basınçlı odalarda uyunur.;Çocuklar mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Her yeni bir şey öğrenilince mutlu olunur.;Her yeni bir şey öğrenilince öğrenenler tarafından mutlu olunur.;∅;öğrenenler tarafından;olunur;passives
+Uzun uçuşlarda rahatça uyunur.;Uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
+Bir serada nemli koridorlarda yürünür.;Bir serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+En derinlerde uzun süre çalışıldı.;En derinlerde dalgıçlar tarafından duzun süre çalışıldı.;∅;dalgıçlar tarafından;çalışıldı;passives
+Yarış olimpiyat köyünde sabahın ilk ışıklarıyla koşulur.;Yarış olimpiyat köyünde atletler tarafından sabahın ilk ışıklarıyla koşulur.;∅;atletler tarafından;koşulur;passives
+Bu serada nemli koridorlarda yürünür.;Bu serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+Herkes plajda güneş altında uzun süre yatılıyor.;Herkes plajda turistler tarafından güneş altında uzun süre yatılıyor.;∅;turistler tarafından;yatılıyor;passives
+Her yaz akşamları sahilde keyifle yürünür.;Her yaz akşamları çiftler tarafından sahilde keyifle yürünür.;∅;çiftler tarafından;yürünür;passives
+Dertsizken daha çok gülünür.;Dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Kişi soğuk algınlığında bol bol uyunur.;Kişi soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Bir sınav öncesi kütüphanede hummalıca çalışıldı.;Bir sınav öncesi öğrenciler tarafından kütüphanede hummalıca çalışıldı.;∅;öğrenciler tarafından;çalışıldı;passives
+Ağır akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Ağır akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+3. sınav haftasında gece geç saatlere kadar çalışıldı.;3. sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+Yemek yemekten sonra biraz dinlenilir.;Yemek yemekten sonra misafirler tarafından biraz dinlenilir.;∅;misafirler tarafından;dinlenilir;passives
+İnsan kışın bu gölde buz üstünde yürünür.;İnsan kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+Öğrenciler yatılı okulda erkenden uyunur.;Öğrenciler yatılı okulda öğrenciler tarafından erkenden uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Kadınlar dijital detoks kampında teknolojiden uzak yaşanır.;Kadınlar dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Yorgunken daha çabuk uyunur.;Yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Bir orman yangını söndürülürken duman altında kalındı.;Bir orman yangını söndürülürken itfaiyeciler tarafından duman altında kalındı.;∅;itfaiyeciler tarafından;kalındı;passives
+Yaz tatilinde bol bol uyunur.;Yaz tatilinde öğrenciler tarafından bol bol uyunur.;∅;öğrenciler tarafından;uyunur;passives
+Hayat dijital detoks kampında teknolojiden uzak yaşanır.;Hayat dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Her nükleer santralde radyasyon alanlarına girilmez.;Her nükleer santralde personel tarafından radyasyon alanlarına girilmez.;∅;personel tarafından;girilmez;passives
+Maraton kumsalda sabah erken saatlerde koşulur.;Maraton kumsalda sporcular tarafından sabah erken saatlerde koşulur.;∅;sporcular tarafından;koşulur;passives
+Özellikle stresli zamanlarda daha çok sigara içilir.;Özellikle stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Bir volkanik gölde asitli suya kesinlikle girilmez.;Bir volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Yazın bu gölde serinlemek için yüzülür.;Yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Eski şehir merkezinde gece geç saatlere kadar yürünür.;Eski şehir merkezinde gençler tarafından gece geç saatlere kadar yürünür.;∅;gençler tarafından;yürünür;passives
+Hava şiddetli kar fırtınasında dışarıda donuldu.;Hava şiddetli kar fırtınasında yolcular tarafından dışarıda donuldu.;∅;yolcular tarafından;donuldu;passives
+Çocuk soğuk algınlığında bol bol uyunur.;Çocuk soğuk algınlığında hastalar tarafından bol bol uyunur.;∅;hastalar tarafından;uyunur;passives
+Daha yorgunken daha çabuk uyunur.;Daha yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Bu kütüphanede tam bir sessizlik içinde çalışıldı.;Bu kütüphanede araştırmacılar tarafından tam bir sessizlik içinde çalışıldı.;∅;araştırmacılar tarafından;çalışıldı;passives
+İzmir maratonda son kilometrede hızlı koşuldu.;İzmir maratonda profesyoneller tarafından son kilometrede hızlı koşuldu.;∅;profesyoneller tarafından;koşuldu;passives
+Güzel yaz gecelerinde balkonda uyunur.;Güzel yaz gecelerinde insanlar tarafından balkonda uyunur.;∅;insanlar tarafından;uyunur;passives
+Her sabah okul bahçesinde koşuldu.;Her sabah öğrenciler tarafından okul bahçesinde koşuldu.;∅;öğrenciler tarafından;koşuldu;passives
+Mercan resifinde renkli balıklarla yüzülür.;Mercan resifinde dalgıçlar tarafından renkli balıklarla yüzülür.;∅;dalgıçlar tarafından;yüzülür;passives
+Ayrıca yoğun kar yağışında kulübenin dışında çabuk donulur.;Ayrıca yoğun kar yağışında bekçiler tarafından kulübenin dışında çabuk donulur.;∅;bekçiler tarafından;donulur;passives
+Yarış serbest dalışta 10 metreden atlanıyor.;Yarış serbest dalışta sporcular tarafından 10 metreden atlanıyor.;∅;sporcular tarafından;atlanıyor;passives
+Bu yaz kampında derin nehirlere atlanıyor.;Bu yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+O ortaçağ kalesinin zindanlarında soğukta donuldu.;O ortaçağ kalesinin zindanlarında mahkumlar tarafından soğukta donuldu.;∅;mahkumlar tarafından;donuldu;passives
+Yazlık evde sabahları geç uyunur.;Yazlık evde tatilciler tarafından sabahları geç uyunur.;∅;tatilciler tarafından;uyunur;passives
+4. akıntılı sularda yüzülmez.;4. akıntılı sularda insanlar tarafından yüzülmez.;∅;insanlar tarafından;yüzülmez;passives
+Ancak akıntı uyarısı yapılan kıyılarda katiyen yüzülmemeli.;Ancak akıntı uyarısı yapılan kıyılarda gençler tarafından katiyen yüzülmemeli.;∅;gençler tarafından;yüzülmemeli;passives
+Insan yorgunken daha çabuk uyunur.;Insan yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+• volkanik gölde asitli suya kesinlikle girilmez.;• volkanik gölde turistler tarafından asitli suya kesinlikle girilmez.;∅;turistler tarafından;girilmez;passives
+Çok stresli zamanlarda daha çok sigara içilir.;Çok stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Her serada nemli koridorlarda yürünür.;Her serada işçiler tarafından nemli koridorlarda yürünür.;∅;işçiler tarafından;yürünür;passives
+İki yamaç paraşütüyle uçurumdan atlandı.;İki yamaç paraşütüyle maceracılar tarafından uçurumdan atlandı.;∅;maceracılar tarafından;atlandı;passives
+Yapılan baloda saatlerce dans edildi.;Yapılan baloda davetliler tarafından saatlerce dans edildi.;∅;davetliler tarafından;dans edildi;passives
+Çünkü kışın bu gölde buz üstünde yürünür.;Çünkü kışın bölgedekiler tarafından bu gölde buz üstünde yürünür.;∅;bölgedekiler tarafından;yürünür;passives
+5. sınav haftasında gece geç saatlere kadar çalışıldı.;5. sınav haftasında üniversiteliler tarafından gece geç saatlere kadar çalışıldı.;∅;üniversiteliler tarafından;çalışıldı;passives
+Uzun köy yolunda tozlu toprakta yürünür.;Uzun köy yolunda köylüler tarafından tozlu toprakta yürünür.;∅;köylüler tarafından;yürünür;passives
+Ayrıca yazın bu sahilde rahatça yüzülür.;Ayrıca yazın turistler tarafından bu sahilde rahatça yüzülür.;∅;turistler tarafından;yüzülür;passives
+İnsanlar stresli zamanlarda daha çok sigara içilir.;İnsanlar stresli zamanlarda insanlar tarafından daha çok sigara içilir.;∅;insanlar tarafından;içilir;passives
+Kamp deniz kenarında sabah erken saatte koşulur.;Kamp deniz kenarında sporcular tarafından sabah erken saatte koşulur.;∅;sporcular tarafından;koşulur;passives
+Çok yüksek kayalıklardan dikkatlice atlanıyor.;Çok yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Dünya her sene bir yaş daha büyünür.;Dünya her sene çocuklar tarafından bir yaş daha büyünür.;∅;çocuklar tarafından;büyünür;passives
+Bir opera binasında akustik test sırasında dans edildi.;Bir opera binasında akustik test sırasında sanatçılar tarafından dans edildi.;∅;sanatçılar tarafından;dans edildi;passives
+Yarış yarış pistinde son turda hızlanılır.;Yarış yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+2. mars kolonisinde basınçlı odalarda uyunur.;2. mars kolonisinde koloniciler tarafından basınçlı odalarda uyunur.;∅;koloniciler tarafından;uyunur;passives
+Karda kaymadan yürünmez.;Karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+7 otobüs yolda kalınca soğukta donuldu.;7 otobüs yolda kalınca yolcular tarafından soğukta donuldu.;∅;yolcular tarafından;donuldu;passives
+Öğrenciler yaz kampında derin nehirlere atlanıyor.;Öğrenciler yaz kampında kampçılar tarafından derin nehirlere atlanıyor.;∅;kampçılar tarafından;atlanıyor;passives
+Akşam köy meydanında davul zurna eşliğinde dans edildi.;Akşam köy meydanında köylüler tarafından davul zurna eşliğinde dans edildi.;∅;köylüler tarafından;dans edildi;passives
+Çok yağmur yağınca şemsiye ile yürünür.;Çok yağmur yağınca insanlar tarafından şemsiye ile yürünür.;∅;insanlar tarafından;yürünür;passives
+Çok para kazanınca rahat yaşanır.;Çok para kazanınca zenginler tarafından rahat yaşanır.;∅;zenginler tarafından;yaşanır;passives
+Hayat dertsizken daha çok gülünür.;Hayat dertsizken insanlar tarafından daha çok gülünür.;∅;insanlar tarafından;gülünür;passives
+Bunlar yüksek kayalıklardan dikkatlice atlanıyor.;Bunlar yüksek kayalıklardan gençler tarafından dikkatlice atlanıyor.;∅;gençler tarafından;atlanıyor;passives
+Motor yarış pistinde son turda hızlanılır.;Motor yarış pistinde sürücüler tarafından son turda hızlanılır.;∅;sürücüler tarafından;hızlanılır;passives
+Daha yorgunken daha çabuk uyunur.;Daha yorgunken insanlar tarafından daha çabuk uyunur.;∅;insanlar tarafından;uyunur;passives
+Yine sıcak yaz günlerinde site havuzda serin serin yüzülür.;Yine sıcak yaz günlerinde site sakinleri tarafından site havuzda serin serin yüzülür.;∅;site sakinleri tarafından;yüzülür;passives
+Herkes yeraltı mağarasında karanlıkta dikkatlice yürünür.;Herkes yeraltı mağarasında mağaracılar tarafından karanlıkta dikkatlice yürünür.;∅;mağaracılar tarafından;yürünür;passives
+Uzun karda kaymadan yürünmez.;Uzun karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Bu dijital detoks kampında teknolojiden uzak yaşanır.;Bu dijital detoks kampında katılımcılar tarafından teknolojiden uzak yaşanır.;∅;katılımcılar tarafından;yaşanır;passives
+Çocuklar yazın bu gölde serinlemek için yüzülür.;Çocuklar yazın yerel halk tarafından bu gölde serinlemek için yüzülür.;∅;yerel halk tarafından;yüzülür;passives
+Kuru karda kaymadan yürünmez.;Kuru karda insanlar tarafından kaymadan yürünmez.;∅;insanlar tarafından;yürünmez;passives
+Özellikle uzun uçuşlarda rahatça uyunur.;Özellikle uzun uçuşlarda yolcular tarafından rahatça uyunur.;∅;yolcular tarafından;uyunur;passives
