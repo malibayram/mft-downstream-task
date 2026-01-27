@@ -15,7 +15,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 - **mft-random-init**: 50.38% Pearson (Rev: `c7dededb`)
 - **tabi-random-init**: 33.60% Pearson (Rev: `dae37c9d`)
 
-
 ## Performance Charts
 
 ### Pearson Correlation
@@ -36,7 +35,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-26 02:09 | tabi-downstream-task-embeddinggemma     | abd57265 | **72.77%** | **71.49%** | 1379    |
 | 2026-01-25 19:21 | **mft-random-init**                     | e5255b59 | **50.45%** | **49.44%** | 1379    |
 | 2026-01-25 09:53 | tabi-random-init                        | 5a25af0d | **40.53%** | **38.60%** | 1379    |
-
 
 # 📜 Detailed Version History
 
@@ -66,7 +64,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-25 15:37 | cce68bd4 | 68.37%  | 67.23%   | Add new SentenceTransformer model |
 | 2026-01-25 00:00 | 5fcebf66 | 44.97%  | 43.82%   | Add new SentenceTransformer model |
 
-
 ## mft-downstream-task-embeddingmagibu
 
 | Date             | Revision | Pearson | Spearman | Commit Message                    |
@@ -93,7 +90,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-25 16:14 | bf3cea42 | 71.72%  | 70.30%   | Add new SentenceTransformer model |
 | 2026-01-25 00:47 | b94e1b33 | 61.06%  | 59.65%   | Add new SentenceTransformer model |
 
-
 ## mft-random-init
 
 | Date             | Revision | Pearson | Spearman | Commit Message                    |
@@ -118,8 +114,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-25 17:17 | 2f2c68a9 | 39.87%  | 39.25%   | Add new SentenceTransformer model |
 | 2026-01-25 16:54 | da4915f1 | 36.86%  | 36.56%   | Add new SentenceTransformer model |
 | 2026-01-25 16:45 | 82ac6fef | 37.91%  | 37.49%   | Add new SentenceTransformer model |
-| 2026-01-25 09:53 | dcbaf725 | 47.09%  | 45.96%   | Add new SentenceTransformer model |
-
 
 ## tabi-downstream-task-embeddinggemma
 
@@ -147,7 +141,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-25 15:58 | 22595f9c | 54.40%  | 53.77%   | Add new SentenceTransformer model |
 | 2026-01-25 00:09 | 74142ee1 | 38.30%  | 37.22%   | Add new SentenceTransformer model |
 
-
 ## tabi-downstream-task-embeddingmagibu
 
 | Date             | Revision | Pearson | Spearman | Commit Message                    |
@@ -172,8 +165,6 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-26 04:51 | ffa726bd | 67.98%  | 66.30%   | Add new SentenceTransformer model |
 | 2026-01-25 16:36 | dcd22027 | 66.29%  | 64.96%   | Add new SentenceTransformer model |
 | 2026-01-25 16:29 | e1c4301e | 63.12%  | 61.73%   | Add new SentenceTransformer model |
-| 2026-01-25 00:43 | 4be73166 | 42.49%  | 41.76%   | Add new SentenceTransformer model |
-
 
 ## tabi-random-init
 
@@ -199,5 +190,3 @@ The best performing model version across all evaluations is **mft-downstream-tas
 | 2026-01-25 19:53 | 8dbc24cd | 28.29%  | 27.47%   | Add new SentenceTransformer model |
 | 2026-01-25 17:07 | 123b7f70 | 25.65%  | 25.57%   | Add new SentenceTransformer model |
 | 2026-01-25 17:01 | 42c02b7b | 27.97%  | 27.04%   | Add new SentenceTransformer model |
-| 2026-01-25 09:53 | 5a25af0d | 40.53%  | 38.60%   | Add new SentenceTransformer model |
-

@@ -4,54 +4,6 @@
     "dataset": "figenfikri/stsb_tr",
     "results": [
       {
-        "model": "magibu/embeddingmagibu-200m",
-        "pearson": 0.7755,
-        "spearman": 0.7745,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 8.58
-      },
-      {
-        "model": "alibayram/mft-downstream-task-embeddingmagibu",
-        "pearson": 0.7567,
-        "spearman": 0.7473,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 9.52
-      },
-      {
-        "model": "alibayram/mft-downstream-task-embeddinggemma",
-        "pearson": 0.7396,
-        "spearman": 0.7294,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 9.22
-      },
-      {
-        "model": "google/embeddinggemma-300m",
-        "pearson": 0.7384,
-        "spearman": 0.7292,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 7.47
-      },
-      {
-        "model": "alibayram/tabi-downstream-task-embeddingmagibu",
-        "pearson": 0.7363,
-        "spearman": 0.724,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 8.16
-      },
-      {
-        "model": "alibayram/tabi-downstream-task-embeddinggemma",
-        "pearson": 0.7276,
-        "spearman": 0.7149,
-        "num_samples": 1379,
-        "split": "test",
-        "processing_time_seconds": 7.98
-      },
-      {
         "model": "alibayram/mft-random-init",
         "pearson": 0.5037,
         "spearman": 0.4935,
@@ -73,54 +25,6 @@
     "timestamp": "2026-01-26T21:44:06.211058",
     "dataset": "figenfikri/stsb_tr",
     "results": [
-      {
-        "model": "magibu/embeddingmagibu-200m",
-        "pearson": 0.8234,
-        "spearman": 0.8027,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 36.09
-      },
-      {
-        "model": "alibayram/tabi-downstream-task-embeddingmagibu",
-        "pearson": 0.7624,
-        "spearman": 0.7368,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 34.87
-      },
-      {
-        "model": "alibayram/mft-downstream-task-embeddingmagibu",
-        "pearson": 0.7652,
-        "spearman": 0.7351,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 42.94
-      },
-      {
-        "model": "alibayram/tabi-downstream-task-embeddinggemma",
-        "pearson": 0.7425,
-        "spearman": 0.7207,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 34.87
-      },
-      {
-        "model": "google/embeddinggemma-300m",
-        "pearson": 0.7391,
-        "spearman": 0.7194,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 31.08
-      },
-      {
-        "model": "alibayram/mft-downstream-task-embeddinggemma",
-        "pearson": 0.745,
-        "spearman": 0.7161,
-        "num_samples": 5749,
-        "split": "train",
-        "processing_time_seconds": 41.97
-      },
       {
         "model": "alibayram/mft-random-init",
         "pearson": 0.5334,

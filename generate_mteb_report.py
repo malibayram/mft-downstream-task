@@ -19,19 +19,17 @@ def get_model_results(base_dir="results"):
         print(f"Directory '{base_dir}' not found.")
         return {}
 
-    # Iterate over model directories
+    # Iterate over models
     for model_dir_name in os.listdir(base_dir):
         model_path = os.path.join(base_dir, model_dir_name)
         if not os.path.isdir(model_path):
             continue
 
-        # Clean model name (remove prefix/suffix if needed, or keep as is)
-        # e.g. alibayram__mft-downstream-task-embeddinggemma -> mft-downstream-task-embeddinggemma
         clean_name = model_dir_name
         if "__" in clean_name:
             clean_name = clean_name.split("__")[-1]
 
-        # Find revisions (subdirectories)
+        # Find revisions
         revisions = [
             d
             for d in os.listdir(model_path)
@@ -41,15 +39,14 @@ def get_model_results(base_dir="results"):
             print(f"No revisions found for {model_dir_name}")
             continue
 
-        # Pick the latest modified revision directory
-        # (Assuming the most recent evaluation is the relevant one)
+        # Pick latest
         revisions.sort(
             key=lambda x: os.path.getmtime(os.path.join(model_path, x)), reverse=True
         )
         latest_rev = revisions[0]
         rev_path = os.path.join(model_path, latest_rev)
 
-        # Parse results in the revision directory
+        # Parse results
         tasks = []
         json_files = glob.glob(os.path.join(rev_path, "*.json"))
 
@@ -62,16 +59,11 @@ def get_model_results(base_dir="results"):
                 with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
-                # Check for main score
-                # Usually in scores -> test -> [0] -> main_score
-                # But sometimes structure varies widely in MTEB results files
-                # We'll try a generic approach
                 score = None
 
                 # Try standard MTEB format
                 if "scores" in data:
                     scores = data["scores"]
-                    # Priority: test > validation > dev
                     for split in [
                         "test",
                         "test_matched",
@@ -99,7 +91,6 @@ def get_model_results(base_dir="results"):
                 print(f"Error reading {json_file}: {e}")
 
         if tasks:
-            # Calculate average
             avg_score = sum(t["score"] for t in tasks) / len(tasks)
             model_data[clean_name] = {
                 "revision": latest_rev,
@@ -142,7 +133,7 @@ def categorize_task(task_name):
     elif "clustering" in tn:
         return "Clustering"
     elif "sts" in tn:
-        return "STS"  # Semantic Textual Similarity
+        return "STS"
     elif "nli" in tn or "snli" in tn or "mnli" in tn:
         return "Pair Classification"
     elif "classification" in tn or "sentiment" in tn or "irony" in tn:
@@ -153,52 +144,193 @@ def categorize_task(task_name):
         return "Other"
 
 
+def set_academic_style():
+    """Set matplotlib style for academic figures."""
+    try:
+        plt.style.use("seaborn-v0_8-whitegrid")
+    except OSError:
+        plt.style.use("ggplot")
+
+    plt.rcParams.update(
+        {
+            "font.size": 12,
+            "axes.titlesize": 14,
+            "axes.labelsize": 13,
+            "xtick.labelsize": 11,
+            "ytick.labelsize": 11,
+            "legend.fontsize": 11,
+            "figure.dpi": 300,
+            "axes.spines.top": False,
+            "axes.spines.right": False,
+        }
+    )
+
+
 def generate_charts(model_data):
     """Generate summary and per-task charts."""
     if not model_data:
         return
 
     output_files = []
+    set_academic_style()
 
     # 1. Average Score Comparison
-    plt.figure(figsize=(12, 8))
+    # Horizontal bar chart for better readability
+    fig_height = max(5, len(model_data) * 1.5)
+    plt.figure(figsize=(10, fig_height))  # Fixed width, variable height
 
     # Sort models by average score
     sorted_models = sorted(
-        model_data.items(), key=lambda x: x[1]["average_score"], reverse=True
+        model_data.items(),
+        key=lambda x: x[1]["average_score"],
+        reverse=False,  # Ascending for barh (top is last)
     )
     names = [m[0] for m in sorted_models]
     scores = [m[1]["average_score"] for m in sorted_models]
 
-    # Colors: Highlight MTEB vs Tabi vs Random
+    # Colors: Highlight MFT vs Tabi vs Random
     colors = []
+    edgecolors = []
+    hatches = []
+
+    # Define palette
+    color_mft = "#4e79a7"  # Blue
+    color_tabi = "#f28e2b"  # Orange
+    color_other = "gray"
+
     for name in names:
-        if "random" in name.lower():
-            colors.append("lightgray")
-        elif "mft" in name.lower():
-            colors.append("skyblue")
-        elif "tabi" in name.lower():
-            colors.append("lightgreen")
+        n_lower = name.lower()
+        if "mft" in n_lower:
+            colors.append(color_mft)
+            edgecolors.append("black")
+            hatches.append("///")
+        elif "tabi" in n_lower:
+            colors.append(color_tabi)
+            edgecolors.append("gray")
+            hatches.append("")
         else:
-            colors.append("gray")
+            colors.append(color_other)
+            edgecolors.append("gray")
+            hatches.append("")
 
-    bars = plt.bar(names, scores, color=colors, edgecolor="black", alpha=0.8)
+    bars = plt.barh(
+        names, scores, color=colors, edgecolor=edgecolors, alpha=0.9, height=0.6
+    )
 
-    plt.title("Average MTEB Score Comparison", fontsize=16)
-    plt.ylabel("Average Score (%)", fontsize=14)
-    plt.xticks(rotation=45, ha="right")
-    plt.grid(True, axis="y", linestyle="--", alpha=0.5)
+    # Apply hatches
+    for bar, hatch in zip(bars, hatches):
+        bar.set_hatch(hatch)
+        if hatch:
+            bar.set_linewidth(1.2)
 
-    plt.bar_label(bars, fmt="%.2f%%", padding=3)
+    plt.title("Average MTEB Score Comparison", pad=15)
+    plt.xlabel("Average Score (%)")
+
+    # Valid ticks
+    plt.grid(True, axis="x", linestyle="--", alpha=0.5)
+
+    # Bold MFT labels on y-axis
+    ax = plt.gca()
+    for i, lbl in enumerate(ax.get_yticklabels()):
+        # lbl is Text object, names[i] corresponds
+        text = names[i]
+        if "mft" in text.lower():
+            lbl.set_fontweight("bold")
+            lbl.set_color("#2c3e50")
+
+    plt.bar_label(bars, fmt="%.2f", padding=3)
     plt.tight_layout()
 
     avg_chart = "mteb_average_scores.png"
-    plt.savefig(avg_chart)
+    plt.savefig(avg_chart, bbox_inches="tight")
     plt.close()
     output_files.append(avg_chart)
     print(f"Generated {avg_chart}")
 
     return output_files
+
+
+def generate_latex_table(model_data):
+    """Generate detailed LaTeX table comparing MFT vs Tabi per task."""
+    output_file = "mteb_detailed_table.tex"
+
+    # Identify models
+    mft_model = next(
+        (m for m in model_data if "mft" in m.lower() and "random" in m.lower()), None
+    )
+    tabi_model = next(
+        (m for m in model_data if "tabi" in m.lower() and "random" in m.lower()), None
+    )
+
+    if not mft_model or not tabi_model:
+        print("Could not find both MFT and Tabi random models for table generation.")
+        return
+
+    mft_tasks = {t["task_name"]: t["score"] for t in model_data[mft_model]["tasks"]}
+    tabi_tasks = {t["task_name"]: t["score"] for t in model_data[tabi_model]["tasks"]}
+
+    common_tasks = sorted(list(set(mft_tasks.keys()) & set(tabi_tasks.keys())))
+
+    lines = []
+    lines.append(r"\begin{table}[H]")
+    lines.append(r"\centering")
+    lines.append(r"\resizebox{\linewidth}{!}{")
+    lines.append(r"\begin{tabular}{lrrr}")
+    lines.append(r"\toprule")
+    lines.append(
+        r"\textbf{Task} & \textbf{MFT-Random} & \textbf{Tabi-Random} & \textbf{$\Delta$} \\"
+    )
+    lines.append(r"\midrule")
+
+    # Categories
+    current_cat = ""
+
+    # Sort by category then name
+    task_objs = [{"name": t, "cat": categorize_task(t)} for t in common_tasks]
+    task_objs.sort(key=lambda x: (x["cat"], x["name"]))
+
+    for t_obj in task_objs:
+        t = t_obj["name"]
+        cat = t_obj["cat"]
+
+        # Add category header if changed
+        if cat != current_cat:
+            lines.append(
+                f"\\multicolumn{{4}}{{c}}{{\\textit{{{cat}}}}} \\\\"
+            )  # \midrule
+            current_cat = cat
+
+        mft_score = mft_tasks[t]
+        tabi_score = tabi_tasks[t]
+        diff = mft_score - tabi_score
+
+        mft_str = f"{mft_score:.2f}"
+        tabi_str = f"{tabi_score:.2f}"
+
+        if mft_score > tabi_score:
+            mft_str = f"\\textbf{{{mft_str}}}"
+        elif tabi_score > mft_score:
+            tabi_str = f"\\textbf{{{tabi_str}}}"
+
+        diff_str = f"{diff:+.2f}"
+
+        # Clean task name
+        task_display = t.replace("_", r"\_")
+
+        lines.append(f"{task_display} & {mft_str} & {tabi_str} & {diff_str} \\\\")
+
+    lines.append(r"\bottomrule")
+    lines.append(r"\end{tabular}")
+    lines.append(r"}")
+    lines.append(
+        r"\caption{Detailed MTEB-TR performance comparison across all tasks for random-initialized models.}"
+    )
+    lines.append(r"\label{tab:mteb_detailed}")
+    lines.append(r"\end{table}")
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"Generated {output_file}")
 
 
 def main():
@@ -326,9 +458,15 @@ def main():
     lines.append(format_table(table3_header, table3_rows))
     lines.append("\n")
 
+    lines.append(format_table(table3_header, table3_rows))
+    lines.append("\n")
+
     # Comparison Chart
     generate_charts(data)
     lines.append("![Average MTEB Scores](mteb_average_scores.png)\n")
+
+    # Generate LaTeX Table
+    generate_latex_table(data)
 
     # Write to file
     output_filename = "MTEB_BENCHMARK_RESULTS.md"
