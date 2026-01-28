@@ -130,7 +130,7 @@ tokens are based on morphological structure with additional
 morphophonological abstractions to further reduce vocabulary size.
 Intuitively the motivation is compelling. The authors right at the
 outset claim that  "Evaluation on the TR-MMLU
-benchmark—a large-scale, Turkish-specific NLP benchmark—demonstrates that
+benchmark-a large-scale, Turkish-specific NLP benchmark-demonstrates that
 the proposed tokenizer achieves the highest Turkish Token Percentage (90.29%)
 and Pure Token Percentage (85.8%) among all tested models." which
 leads to some excitement and a heightened expectations -- which

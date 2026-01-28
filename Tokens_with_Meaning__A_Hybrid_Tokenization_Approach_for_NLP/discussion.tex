@@ -3,7 +3,7 @@
 
 \subsection{Why morphology-first tokenization helps semantic similarity}
 
-The most consistent downstream gains we observe appear on semantic textual similarity (STS), where sentence-level meaning equivalence is evaluated via correlation with human judgments. A morphology-first tokenizer reduces two specific sources of representational noise in Turkish:
+The most consistent downstream gains we observe appear on STS, where sentence-level meaning equivalence is evaluated via correlation with human judgments. A morphology-first tokenizer reduces two specific sources of representational noise in Turkish:
 (i) \emph{root fragmentation}, where a frequent lexical stem is split into unrelated subpieces, and
 (ii) \emph{allomorph dispersion}, where surface variants of the same morpheme (or root alternation) map to unrelated token identities.
 Both effects can increase the burden on the model to relearn compositional meaning across many surface forms. By making roots and productive suffixes explicit and unifying common allomorphic variants, MFT encourages repeated exposure to stable meaning-bearing units.

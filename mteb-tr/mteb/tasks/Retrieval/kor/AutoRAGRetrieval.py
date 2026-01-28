@@ -8,7 +8,7 @@ from ....abstasks.AbsTaskRetrieval import AbsTaskRetrieval
 class AutoRAGRetrieval(AbsTaskRetrieval):
     metadata = TaskMetadata(
         name="AutoRAGRetrieval",
-        description="This dataset enables the evaluation of Korean RAG performance across various domains—finance, public sector, healthcare, legal, and commerce—by providing publicly accessible documents, questions, and answers.",
+        description="This dataset enables the evaluation of Korean RAG performance across various domains-finance, public sector, healthcare, legal, and commerce-by providing publicly accessible documents, questions, and answers.",
         reference="https://arxiv.org/abs/2410.20878",
         dataset={
             "path": "yjoonjang/markers_bm",

@@ -4,7 +4,7 @@
 
 We evaluated all models on the **STS Benchmark for Turkish (STSb-TR)**. This measures the ability of the embeddings to capture semantic similarity, which is the direct objective of the distillation.
 
-**Source of Truth:** `STS_BENCHMARK_RESULTS.md`
+**Key Files:** `STS_BENCHMARK_RESULTS.md`
 
 ## Key Findings
 

@@ -4,7 +4,7 @@
 
 We conducted a comprehensive evaluation on the **MTEB-TR (Turkish)** suite, covering retrieval, classification, clustering, and pair classification tasks.
 
-**Source of Truth:** `MTEB_BENCHMARK_RESULTS.md`
+**Key Files:** `MTEB_BENCHMARK_RESULTS.md`
 
 ## Key Findings
 
@@ -45,5 +45,5 @@ MFT is particularly strong in **STS** (as seen in the dedicated report) and comp
 
 - **Results Section:**
   - Present MTEB results as a "Breadth Evaluation".
-  - Highlight that while Tabi (trained on massive data) holds up well on general classification, MFT (linguistically motivated) shows distinct advantages in **semantic similarity (STS)** tasks, which validates the "Tokens with Meaning" hypothesis—that better morphology leads to better semantic representation.
+  - Highlight that while Tabi (trained on massive data) holds up well on general classification, MFT (linguistically motivated) shows distinct advantages in **semantic similarity (STS)** tasks, which validates the "Tokens with Meaning" hypothesis-that better morphology leads to better semantic representation.
   - Be transparent: MFT does not win _every_ category, but wins the one most relevant to the paper's core claim (meaning/similarity).

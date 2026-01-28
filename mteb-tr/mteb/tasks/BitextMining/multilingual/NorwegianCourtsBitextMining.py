@@ -28,7 +28,7 @@ class NorwegianCourtsBitextMining(AbsTaskBitextMining):
         sample_creation="found",
         bibtex_citation="""
 @inproceedings{opus4,
-  title={OPUS-MT — Building open translation services for the World},
+  title={OPUS-MT - Building open translation services for the World},
   author={Tiedemann, J{\"o}rg and Thottingal, Santhosh},
   booktitle={Proceedings of the 22nd Annual Conference of the European Association for Machine Translation (EAMT)},
   year={2020}

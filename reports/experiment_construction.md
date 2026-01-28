@@ -1,6 +1,10 @@
 # Experiment Construction & Pipeline
 
+## Overview
+
 This document details the exact steps taken to construct the experiments for the "Tokens with Meaning" paper, including data preparation, model initialization, and training protocols.
+
+**Key Files:** `prepare_dataset.py`, `train.py`, `evaluate_sts_tr.py`, `mteb-tr/mteb_tr_cli.py`.
 
 ## 1. Dataset Preparation
 
@@ -123,3 +127,11 @@ Evaluation was performed on three downstream benchmarks using dedicated scripts 
 ### 4.4 Result Aggregation
 
 Results from these scripts are aggregated into summary tables (e.g., `STS_BENCHMARK_RESULTS.md`) for final comparison.
+
+## Paper Integration Points
+
+- **Methodology / Experimental Setup:**
+  - Cite the "Dual/Quad Tokenization" strategy in the Data Preparation section.
+  - Emphasize strict length filtering (2048) to guarantee identical context across all 4 models.
+  - Detail the random initialization (Seed 42) to preemptively address "lucky seed" counter-arguments.
+  - Reference the specific evaluation scripts (`evaluate_sts_tr.py`, etc.) if providing a "Reproducibility" footnote.

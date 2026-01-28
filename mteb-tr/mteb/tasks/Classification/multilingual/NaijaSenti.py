@@ -12,7 +12,7 @@ from mteb.abstasks.TaskMetadata import TaskMetadata
 class NaijaSenti(AbsTaskClassification, MultilingualTask):
     metadata = TaskMetadata(
         name="NaijaSenti",
-        description="NaijaSenti is the first large-scale human-annotated Twitter sentiment dataset for the four most widely spoken languages in Nigeria — Hausa, Igbo, Nigerian-Pidgin, and Yorùbá — consisting of around 30,000 annotated tweets per language, including a significant fraction of code-mixed tweets.",
+        description="NaijaSenti is the first large-scale human-annotated Twitter sentiment dataset for the four most widely spoken languages in Nigeria - Hausa, Igbo, Nigerian-Pidgin, and Yorùbá - consisting of around 30,000 annotated tweets per language, including a significant fraction of code-mixed tweets.",
         reference="https://github.com/hausanlp/NaijaSenti",
         dataset={
             "path": "HausaNLP/NaijaSenti-Twitter",

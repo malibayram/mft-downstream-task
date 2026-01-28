@@ -4,6 +4,8 @@
 
 The repository vendors `sentence-transformers` and `mteb-tr`. This report documents _why_ we vendored them and _what_ we changed.
 
+**Key Files:** `sentence_transformers/`, `mteb-tr/`.
+
 ## 1. sentence-transformers
 
 **Why vendored?**

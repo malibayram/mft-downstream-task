@@ -4,7 +4,7 @@
 
 We tracked the performance of models across multiple code revisions to ensure stability and reproducibility.
 
-**Source of Truth:** `VERSION_BENCHMARK_RESULTS.md`
+**Key Files:** `VERSION_BENCHMARK_RESULTS.md`
 
 ## Key Findings
 

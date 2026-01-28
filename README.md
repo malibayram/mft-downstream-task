@@ -180,13 +180,13 @@ Results will be tracked after training in `sts_benchmark_results.json`. We compa
 ### Embedding Initialization Strategies
 
 1. **Cloned (Mean Pooling)**: For each target token, find matching source tokens and average their embeddings
-2. **Random (Xavier, Seeded)**: Initialize all parameters randomly using Xavier uniform initialization with a fixed seed (42) for reproducibility. The `random_init.py` script creates the model **once** and pushes to both repos—only the tokenizer files differ:
+2. **Random (Xavier, Seeded)**: Initialize all parameters randomly using Xavier uniform initialization with a fixed seed (42) for reproducibility. The `random_init.py` script creates the model **once** and pushes to both repos-only the tokenizer files differ:
    - `alibayram/mft-random-init`: No tokenizer files (uses custom `TurkishTokenizer` at inference)
    - `alibayram/tabi-random-init`: Includes TabiBERT tokenizer files
    - `alibayram/cosmosGPT2-random-init`: Includes cosmosGPT2 tokenizer files
    - `alibayram/newmindaiMursit-random-init`: Includes newmindaiMursit tokenizer files
 
-### Why TabiBERT was pruned to 32K?
+### Why TabiBERT and other tokenizers were pruned to 32K?
 
 TabiBERT originally has ~52K tokens. We pruned to 32K to match MFT vocabulary size, ensuring fair comparison (same embedding matrix capacity).
 
