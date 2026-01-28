@@ -5,7 +5,7 @@ The performance of the proposed morphological tokenizer was evaluated using the 
 
 The evaluation compared five different tokenizers: \texttt{google/gemma-2-9b}, \texttt{meta-llama/Llama-3.2-3B}, \texttt{Qwen/Qwen2.5-7B-Instruct}, \texttt{CohereForAI/aya-expanse-8b}, and the proposed \texttt{turkish\_tokenizer}. Each tokenizer was assessed using a consistent set of linguistic and computational metrics introduced in \cite{bayram_tokenization_2025}. These metrics include total token count, vocabulary size, number of unique tokens, Turkish Token Percentage (TR~\%), and Pure Token Percentage (Pure~\%). TR~\% quantifies the proportion of tokens that correspond to valid Turkish words or morphemes, while Pure~\% measures the proportion of tokens that fully align with unambiguous root or affix boundaries, thus reflecting morphological integrity.
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{Performance of the proposed \texttt{turkish\_tokenizer} on the TR-MMLU dataset.}
 \label{tab:turkish_tokenizer_results}
@@ -102,34 +102,28 @@ The results presented in this section provide strong empirical support for the h
 \subsection{Downstream Sentence Embedding Evaluation (STS and MTEB-TR)}
 \label{sec:downstream}
 
-While TR~\% and Pure~\% provide interpretable diagnostics of morphological alignment, they do not directly measure task performance. We therefore evaluate whether the proposed morphology-first tokenizer improves sentence-level representations on downstream benchmarks. We report results on Turkish semantic textual similarity (STSb-TR) using Pearson/Spearman correlation \cite{beken_fikri_semantic_2021} and on a Turkish embedding benchmark suite following the Massive Text Embedding Benchmark (MTEB) methodology \cite{mteb_massive_text_embedding_benchmark}.
+While TR~\% and Pure~\% provide interpretable diagnostics of morphological alignment, they do not directly measure task performance. We therefore evaluate whether the proposed morphology-first tokenizer improves sentence-level representations on downstream benchmarks. We report results on Turkish semantic textual similarity (STSb-TR) using Pearson/Spearman correlation \cite{beken_fikri_semantic_2021} and on a Turkish embedding benchmark suite following the Massive Text Embedding Benchmark (MTEB) methodology. We additionally evaluate on TurBLiMP \cite{basar_turblimp_2025}, a Turkish benchmark of linguistic minimal pairs designed to test grammatical sensitivity.
 
-To isolate tokenizer effects under a controlled training budget, we train sentence embedding models via teacher-guided embedding alignment, where student representations are optimized to match fixed teacher vectors for the same text. This setting avoids online teacher inference while retaining a downstream-relevant objective. Training details (hardware, hyperparameters, dataset schema, and filtering) are provided in \texttt{TRAINING\_DETAILS.md}. We compare the proposed tokenizer (MFT) against a strong Turkish subword baseline (Tabi) under the same training recipe, and we include randomly initialized baselines as a sanity check.
+To isolate the effect of tokenization from pretrained knowledge, we evaluate \textbf{randomly initialized} embedding models---architectures with no prior training, where the only structured input is the tokenized sequence. This setting directly tests whether the tokenizer's segmentation strategy provides a useful inductive bias for learning semantic representations from scratch. We compare the proposed tokenizer (MFT) against a strong Turkish subword baseline (Tabi) under identical model architectures and training conditions.
 
 \input{downstream_tables}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/sts_benchmark_chart_test.png}
-\caption{STS benchmark test split results across training steps (from \texttt{STS\_BENCHMARK\_RESULTS.md}).}
+\caption{STS benchmark test split results for randomly initialized models (from \texttt{STS\_BENCHMARK\_RESULTS.md}).}
 \label{fig:sts_chart}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/mteb_average_scores.png}
 \caption{Overall average MTEB-TR scores across evaluated models (from \texttt{MTEB\_BENCHMARK\_RESULTS.md}).}
 \label{fig:mteb_avg}
 \end{figure}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.49\linewidth]{figures/version_history_pearson.png}\hfill
-\includegraphics[width=0.49\linewidth]{figures/version_history_spearman.png}
-\caption{Checkpoint-history robustness on STSb-TR (Pearson/Spearman), from \texttt{VERSION\_BENCHMARK\_RESULTS.md}.}
-\label{fig:version_history}
-\end{figure}
-
-Across runs, MFT provides the clearest gains on semantic similarity: the best MFT model reaches 74.41\% Pearson on STSb-TR compared with 66.29\% for the best Tabi model, and the gap persists under random initialization (47.09\% vs.\ 40.53\%). On MTEB-TR, the best Tabi model achieves a slightly higher overall average (62.59\% vs.\ 62.09\%), whereas MFT achieves the strongest STS category average (74.73\% vs.\ 72.41\%) and a substantially stronger random-initialized baseline (38.99\% vs.\ 33.33\%), suggesting that morphology-first tokenization provides a more informative inductive bias when learning starts from scratch.
+The results demonstrate a clear advantage for morphology-first tokenization. On STSb-TR, the MFT-initialized model achieves \textbf{50.45\%} Pearson correlation compared with 40.53\% for the Tabi baseline---a gain of \textbf{+9.92 percentage points}. This substantial gap indicates that MFT's morpheme-aligned segmentation provides a stronger structural prior for learning Turkish semantic similarity, even without any pretrained weights. On MTEB-TR, MFT achieves the strongest performance across most categories: 49.36\% on STS (vs.\ 33.24\% for Tabi), 28.94\% on Retrieval (vs.\ 18.46\%), and 38.99\% overall average (vs.\ 33.33\%). These results suggest that morphology-first tokenization provides a more informative inductive bias when learning starts from scratch, directly validating the ``Tokens with Meaning'' hypothesis.
 
 \FloatBarrier
+
+

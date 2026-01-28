@@ -39,40 +39,20 @@ if not WANDB_API_KEY:
 if WANDB_API_KEY:
     os.environ["WANDB_API_KEY"] = WANDB_API_KEY
 
-# Pre-encoded dataset from prepare_dataset.py
-DATASET_ID = "alibayram/cosmos-corpus-encoded"
+# Pre-encoded dataset from prepare_dataset.py (v2)
+DATASET_ID = "alibayram/cosmos-corpus-encoded-v2"
 
-# Models configuration
+# Models configuration (Just the 2 new random models)
 MODELS = [
     {
-        "name": "mft-random-init",
-        "model_id": "alibayram/mft-random-init",
-        "input_ids_column": "mft_input_ids",
+        "name": "cosmos-random-init",
+        "model_id": "alibayram/cosmosGPT2-random-init",
+        "input_ids_column": "cosmos_input_ids",
     },
     {
-        "name": "tabi-random-init",
-        "model_id": "alibayram/tabi-random-init",
-        "input_ids_column": "tabi_input_ids",
-    },
-    {
-        "name": "mft-embeddinggemma",
-        "model_id": "alibayram/mft-downstream-task-embeddinggemma",
-        "input_ids_column": "mft_input_ids",
-    },
-    {
-        "name": "tabi-embeddinggemma",
-        "model_id": "alibayram/tabi-downstream-task-embeddinggemma",
-        "input_ids_column": "tabi_input_ids",
-    },
-    {
-        "name": "mft-embeddingmagibu",
-        "model_id": "alibayram/mft-downstream-task-embeddingmagibu",
-        "input_ids_column": "mft_input_ids",
-    },
-    {
-        "name": "tabi-embeddingmagibu",
-        "model_id": "alibayram/tabi-downstream-task-embeddingmagibu",
-        "input_ids_column": "tabi_input_ids",
+        "name": "mursit-random-init",
+        "model_id": "alibayram/newmindaiMursit-random-init",
+        "input_ids_column": "mursit_input_ids",
     },
 ]
 
@@ -85,10 +65,6 @@ for i, model_cfg in enumerate(MODELS):
     model_name = model_cfg["name"]
     model_id = model_cfg["model_id"]
     input_column = model_cfg["input_ids_column"]
-
-    if model_name.startswith("mft") or model_name.startswith("tabi"):
-        logger.info(f"Skipping Phase 1 for {model_name} (already 100-step trained).")
-        continue
 
     logger.info(f"\n[{i+1}/{len(MODELS)}] Starting training for: {model_name}")
     logger.info(f"Model ID: {model_id}")
@@ -151,9 +127,6 @@ for i, model_cfg in enumerate(MODELS):
     model_name = model_cfg["name"]
     model_id = model_cfg["model_id"]
     input_column = model_cfg["input_ids_column"]
-
-    if model_name == "mft-random-init":
-        continue
 
     logger.info(f"\n[{i+1}/{len(MODELS)}] Starting training for: {model_name}")
     logger.info(f"Model ID: {model_id}")

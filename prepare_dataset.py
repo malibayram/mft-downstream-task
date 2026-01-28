@@ -2,14 +2,14 @@
 
 This script prepares a training dataset by:
 1. Loading the source dataset with teacher embeddings
-2. Encoding texts with both MFT and TabiBERT tokenizers
+2. Encoding texts with CosmosGPT2 and NewMindAI-Mursit tokenizers
 3. Filtering texts that exceed max sequence length (2048 tokens)
 4. Pushing the prepared dataset to HuggingFace Hub
 
 The resulting dataset has columns:
 - text: Original text
-- mft_input_ids: Token IDs from MFT tokenizer
-- tabi_input_ids: Token IDs from TabiBERT tokenizer
+- cosmos_input_ids: Token IDs from CosmosGPT2 tokenizer
+- mursit_input_ids: Token IDs from Mursit tokenizer
 - teacher_embedding_final: Teacher model embeddings
 
 Usage:
@@ -22,12 +22,10 @@ from datasets import load_dataset
 from dotenv import load_dotenv
 from transformers import AutoTokenizer
 
-from turkish_tokenizer import TurkishTokenizer
-
 load_dotenv()
 
 # Configuration
-SOURCE_DATASET = "alibayram/cosmos-corpus-0-05-with-embeddings"
+SOURCE_DATASET = "alibayram/cosmos-corpus-encoded"
 OUTPUT_DATASET = "alibayram/cosmos-corpus-encoded"
 MAX_SEQ_LENGTH = 2048
 TEXT_COLUMN = "text"
@@ -38,7 +36,7 @@ HF_TOKEN = os.environ.get("HF_TOKEN")
 
 def main():
     print("=" * 60)
-    print("Dataset Preparation for Embedding Distillation")
+    print("Dataset Preparation for Embedding Distillation (v2)")
     print("=" * 60)
 
     # Load source dataset
@@ -49,17 +47,15 @@ def main():
     # Initialize tokenizers
     print("\n2. Initializing tokenizers...")
 
-    # MFT Tokenizer
-    mft_tokenizer = TurkishTokenizer()
-    print(f"   MFT tokenizer vocab size: {mft_tokenizer.vocab_size}")
+    # CosmosGPT2 Tokenizer
+    cosmos_id = "alibayram/cosmosGPT2-random-init"
+    print(f"   Loading CosmosGPT2: {cosmos_id}")
+    cosmos_tokenizer = AutoTokenizer.from_pretrained(cosmos_id, token=HF_TOKEN)
 
-    # TabiBERT Tokenizer
-    tabi_tokenizer = AutoTokenizer.from_pretrained(
-        "alibayram/TabiBERT-tokenizer-32k",
-        token=HF_TOKEN,
-        use_fast=True,
-    )
-    print(f"   TabiBERT tokenizer vocab size: {tabi_tokenizer.vocab_size}")
+    # Mursit Tokenizer
+    mursit_id = "alibayram/newmindaiMursit-random-init"
+    print(f"   Loading Mursit: {mursit_id}")
+    mursit_tokenizer = AutoTokenizer.from_pretrained(mursit_id, token=HF_TOKEN)
 
     # Encode with both tokenizers and filter
     print(f"\n3. Encoding and filtering (max_seq_length={MAX_SEQ_LENGTH})...")
@@ -68,28 +64,28 @@ def main():
         """Encode text with both tokenizers and check length."""
         text = example[TEXT_COLUMN]
 
-        # MFT encoding
-        mft_input_ids = mft_tokenizer.encode(text)
+        # Cosmos encoding
+        cosmos_input_ids = cosmos_tokenizer.encode(text, add_special_tokens=True)
 
-        # TabiBERT encoding
-        tabi_input_ids = tabi_tokenizer.encode(text, add_special_tokens=True)
+        # Mursit encoding
+        mursit_input_ids = mursit_tokenizer.encode(text, add_special_tokens=True)
 
         # Check if both are within max length
         keep = (
-            len(mft_input_ids) <= MAX_SEQ_LENGTH
-            and len(tabi_input_ids) <= MAX_SEQ_LENGTH
+            len(cosmos_input_ids) <= MAX_SEQ_LENGTH
+            and len(mursit_input_ids) <= MAX_SEQ_LENGTH
         )
 
         return {
-            "mft_input_ids": mft_input_ids,
-            "tabi_input_ids": tabi_input_ids,
+            "cosmos_input_ids": cosmos_input_ids,
+            "mursit_input_ids": mursit_input_ids,
             "_keep": keep,
         }
 
     # Process dataset
     dataset = dataset.map(
         encode_and_filter,
-        desc="Encoding with MFT & TabiBERT",
+        desc="Encoding with Cosmos & Mursit",
         num_proc=4,  # Use multiple processes for speed
     )
 
@@ -111,6 +107,8 @@ def main():
         TEXT_COLUMN,
         "mft_input_ids",
         "tabi_input_ids",
+        "cosmos_input_ids",
+        "mursit_input_ids",
         TEACHER_EMBEDDING_COLUMN,
     ]
 
@@ -123,7 +121,7 @@ def main():
     print(f"\n4. Final dataset columns: {final_columns}")
 
     # Save locally first (so we don't lose work if push fails)
-    local_path = "./encoded_dataset"
+    local_path = "./encoded_dataset_v2"
     print(f"\n5. Saving locally to: {local_path}")
     dataset.save_to_disk(local_path)
     print("   ✓ Saved locally!")
