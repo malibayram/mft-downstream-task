@@ -64,5 +64,27 @@
         "processing_time_seconds": 7.24
       }
     ]
+  },
+  {
+    "timestamp": "2026-01-28T04:35:55.450351",
+    "dataset": "figenfikri/stsb_tr",
+    "results": [
+      {
+        "model": "alibayram/newmindaiMursit-random-init",
+        "pearson": 0.3472,
+        "spearman": 0.3477,
+        "num_samples": 1379,
+        "split": "test",
+        "processing_time_seconds": 9.58
+      },
+      {
+        "model": "alibayram/cosmosGPT2-random-init",
+        "pearson": 0.2866,
+        "spearman": 0.2817,
+        "num_samples": 1379,
+        "split": "test",
+        "processing_time_seconds": 7.84
+      }
+    ]
   }
 ]

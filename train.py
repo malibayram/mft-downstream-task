@@ -39,8 +39,8 @@ if not WANDB_API_KEY:
 if WANDB_API_KEY:
     os.environ["WANDB_API_KEY"] = WANDB_API_KEY
 
-# Pre-encoded dataset from prepare_dataset.py (v2)
-DATASET_ID = "alibayram/cosmos-corpus-encoded-v2"
+# Pre-encoded dataset from prepare_dataset.py
+DATASET_ID = "alibayram/cosmos-corpus-encoded"
 
 # Models configuration (Just the 2 new random models)
 MODELS = [
