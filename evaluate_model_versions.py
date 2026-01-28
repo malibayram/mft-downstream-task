@@ -66,7 +66,12 @@ def evaluate_model_version(
                 custom_tokenizer=tt.TurkishTokenizer(),
             )
         else:
-            model = SentenceTransformer(model_name, revision=revision, device=device)
+            model = SentenceTransformer(
+                model_name,
+                revision=revision,
+                device=device,
+                trust_remote_code=True,
+            )
     except Exception as e:
         logger.error(f"Failed to load model revision {revision}: {e}")
         return {

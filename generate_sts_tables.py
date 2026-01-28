@@ -53,6 +53,54 @@ def process_split_data(entries, split_name):
     return all_runs, best_results
 
 
+def load_version_history_files():
+    """Load detailed version history from version_eval_*.json files."""
+    import glob
+
+    version_files = glob.glob("version_eval_*.json")
+    all_entries = []
+
+    for vfile in version_files:
+        try:
+            with open(vfile, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            model_name = data.get("model", "Unknown")
+            # Iterate through the 'results' list which contains the history
+            for res in data.get("results", []):
+                ts_raw = res.get("commit_date", "")
+                ts_obj = datetime.min
+                if ts_raw:
+                    try:
+                        ts_obj = datetime.fromisoformat(ts_raw)
+                        if ts_obj.tzinfo is not None:
+                            ts_obj = ts_obj.replace(tzinfo=None)  # Make naive
+                    except ValueError:
+                        pass
+
+                all_entries.append(
+                    {
+                        "timestamp_obj": ts_obj,
+                        "timestamp_display": (
+                            ts_obj.strftime("%Y-%m-%d %H:%M")
+                            if ts_obj != datetime.min
+                            else "N/A"
+                        ),
+                        "model": model_name,
+                        "dataset": data.get("dataset", "unknown"),
+                        "split": res.get("split", "unknown"),
+                        "pearson": res.get("pearson", 0.0) or 0.0,
+                        "spearman": res.get("spearman", 0.0) or 0.0,
+                        "num_samples": res.get("num_samples", 0),
+                        "revision": res.get("revision", ""),
+                    }
+                )
+        except Exception as e:
+            print(f"Warning: Failed to load {vfile}: {e}")
+
+    return all_entries
+
+
 def generate_detailed_summary(entries_by_split):
     """Generate detailed textual summary with scores as percentages."""
     lines = ["# 📝 Detailed Analysis Summary\n"]
@@ -264,56 +312,77 @@ def generate_version_history_charts(all_entries):
             )
 
         model_data.setdefault(e["model"], []).append(
-            (step, e.get("pearson", 0) or 0, e.get("spearman", 0) or 0)
+            (
+                step,
+                e.get("pearson", 0) or 0,
+                e.get("spearman", 0) or 0,
+                e.get("timestamp_obj", datetime.min),
+            )
         )
 
     # Common plotting helper
     def plot_metric(metric_idx, metric_name, filename):
-        plt.figure(figsize=(8, 5))
+        plt.figure(figsize=(12, 6))  # Wider for timeline
 
-        has_single_points_only = True
+        # Organize by model to sort by date
+        for model in model_data:
+            # Sort by timestamp
+            model_data[model].sort(key=lambda x: x[3])  # Index 3 is timestamp_obj
 
-        for model, points in model_data.items():
-            points.sort()
-            steps = [p[0] for p in points]
-            scores = [p[metric_idx] * 100 for p in points]
+        # Check if we have enough points for a line chart for ANY model
+        max_points = max(len(pts) for pts in model_data.values()) if model_data else 0
+        use_bar = max_points <= 1
 
-            if len(points) > 1:
-                has_single_points_only = False
+        if use_bar:
+            # Generate BAR chart (same logic as before)
+            models = sorted(model_data.keys())
+            scores = []
+            for m in models:
+                pts = model_data[m]
+                scores.append(pts[-1][metric_idx] * 100)  # Latest
+
+            y = np.arange(len(models))
+            bars = plt.barh(y, scores, height=0.6, color="#4e79a7", alpha=0.9)
+
+            # Highlight MFT
+            for i, m in enumerate(models):
+                if "mft" in m.lower():
+                    bars[i].set_hatch("///")
+                    bars[i].set_edgecolor("black")
+                    bars[i].set_color("#f28e2b")
+
+            plt.yticks(y, models)
+            plt.xlabel(f"{metric_name} Score (%)")
+            plt.title(f"Version Comparison - {metric_name} (Latest)")
+            plt.grid(True, axis="x", linestyle="--", alpha=0.5)
+            plt.gca().invert_yaxis()
+            plt.bar_label(bars, fmt="%.2f%%", padding=3)
+
+        else:
+            # Generate LINE chart with Step Index on X-axis (ordered by date)
+            for model, points in model_data.items():
+                # points are already sorted by date in the loop above
+                scores = [p[metric_idx] * 100 for p in points]
+
+                # Use sequential steps
+                x_axis = range(len(scores))
+
                 plt.plot(
-                    steps, scores, marker="o", linestyle="-", label=model, markersize=8
-                )
-            else:
-                # Plot single point large
-                plt.plot(
-                    steps,
+                    x_axis,
                     scores,
-                    marker="D",
-                    linestyle="",
+                    marker="o",
+                    linestyle="-",
                     label=model,
-                    markersize=10,
-                    alpha=0.9,
+                    markersize=6,
+                    linewidth=2,
+                    alpha=0.8,
                 )
-                # Annotate
-                for x, y in zip(steps, scores):
-                    plt.annotate(
-                        f"{y:.1f}%",
-                        (x, y),
-                        xytext=(0, 10),
-                        textcoords="offset points",
-                        ha="center",
-                    )
 
-        plt.title(f"Version History - {metric_name}")
-        plt.xlabel("Training Step")
-        plt.ylabel(f"{metric_name} Score (%)")
-        plt.grid(True, linestyle="--", alpha=0.6)
-        plt.legend(frameon=True)
-
-        # Center x-axis if only single points
-        if has_single_points_only:
-            plt.xlim(-0.5, 0.5)
-            plt.xticks([0], ["Random Init (0)"])
+            plt.xlabel("Checkpoints (Ordered by Date)")
+            plt.title(f"Version History - {metric_name}")
+            plt.ylabel(f"{metric_name} Score (%)")
+            plt.grid(True, linestyle="--", alpha=0.6)
+            plt.legend(frameon=True, bbox_to_anchor=(1.02, 1), loc="upper left")
 
         plt.tight_layout()
         plt.savefig(filename, bbox_inches="tight")
@@ -404,8 +473,18 @@ def main():
         entries_by_split.setdefault(e["split"], []).append(e)
 
     # --- Generate Version History Charts (All Splits or Test Only) ---
-    # We call this explicitly to restore the missing files
-    generate_version_history_charts(all_entries)
+    # Load detailed history from version_eval_*.json files
+    detailed_history = load_version_history_files()
+
+    # If we found detailed history, use it. Otherwise fall back to the merged results (all_entries)
+    if detailed_history:
+        print(
+            f"Found {len(detailed_history)} historical data points from version_eval files."
+        )
+        generate_version_history_charts(detailed_history)
+    else:
+        print("No detailed version history found, using merged results.")
+        generate_version_history_charts(all_entries)
 
     output_lines = []
 

@@ -10,7 +10,6 @@ random_init_cloned/
 encoded_dataset/
 STS_BENCHMARK_RESULTS.md
 STS_BENCHMARK_RESULTS.pdf
-sts_benchmark_chart*.png
 
 # latex related files
 *.aux

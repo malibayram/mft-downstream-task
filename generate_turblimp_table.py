@@ -5,84 +5,111 @@ Parses CSV results from turblimp_results/ and generates a comparison table.
 """
 import pandas as pd
 import os
+import glob
 
 
 def generate_latex_table():
     base_dir = "turblimp_results"
 
-    # Files
-    mft_file = os.path.join(base_dir, "cosmosGPT2-random-init_turblimp_sensitivity.csv")
-    tabi_file = os.path.join(base_dir, "tabi-random-init_turblimp_sensitivity.csv")
-
-    if not os.path.exists(mft_file) or not os.path.exists(tabi_file):
-        print(f"Error: Missing result files in {base_dir}")
+    if not os.path.exists(base_dir):
+        print(f"Directory {base_dir} not found.")
         return
 
-    # Load data
-    df_mft = pd.read_csv(mft_file)
-    df_tabi = pd.read_csv(tabi_file)
+    # Find all sensitivity CSVs
+    csv_files = glob.glob(os.path.join(base_dir, "*_turblimp_sensitivity.csv"))
+    if not csv_files:
+        print("No TurBLiMP result files found.")
+        return
 
-    # Merge on phenomenon/paradigm
-    # Assuming columns: 'phenomenon', 'score', etc.
-    # Let's peek at structure by assuming standardized columns from previous steps
-    # Usually: 'category', 'score'.
+    # Map filename prefix to display name
+    # e.g. cosmosGPT2-random-init -> Cosmos-Random
+    #      mft-random-init -> MFT-Random
+    #      tabi-random-init -> Tabi-Random
+    #      newmindaiMursit-random-init -> Mursit-Random
 
-    # Standardize column names if needed (sensitivity script usually outputs: category, score, num_samples)
-    # Actually, let's just rename 'score' to 'MFT' and 'Tabi'
+    def get_display_name(fname):
+        base = os.path.basename(fname).replace("_turblimp_sensitivity.csv", "")
+        if "cosmos" in base.lower():
+            return "Cosmos-Random"
+        if "mursit" in base.lower():
+            return "Mursit-Random"
+        if "mft" in base.lower():
+            return "MFT-Random"
+        if "tabi" in base.lower():
+            return "Tabi-Random"
+        return base
 
-    df_mft.rename(columns={"avg_similarity": "MFT"}, inplace=True)
-    df_tabi.rename(columns={"avg_similarity": "Tabi"}, inplace=True)
+    data_frames = {}
+    for cf in csv_files:
+        name = get_display_name(cf)
+        try:
+            df = pd.read_csv(cf)
+            # Normalize column name if needed
+            if "avg_similarity" in df.columns:
+                df.rename(columns={"avg_similarity": name}, inplace=True)
+                data_frames[name] = df[["category", name]]
+        except Exception as e:
+            print(f"Error loading {cf}: {e}")
 
-    # Merge
-    df_merged = pd.merge(
-        df_mft[["category", "MFT"]],
-        df_tabi[["category", "Tabi"]],
-        on="category",
-        how="inner",
-    )
+    if not data_frames:
+        return
 
-    # Calculate difference
-    df_merged["Diff"] = df_merged["MFT"] - df_merged["Tabi"]
+    # Merge all dataframes on 'category'
+    dfs = list(data_frames.values())
+    df_merged = dfs[0]
+    for df in dfs[1:]:
+        df_merged = pd.merge(df_merged, df, on="category", how="outer")
 
-    # Sort by MFT score
-    df_merged.sort_values("MFT", ascending=False, inplace=True)
+    # Sort by first model's score just to have an order
+    first_col = dfs[0].columns[1]  # category is 0
+    df_merged.sort_values(first_col, ascending=False, inplace=True)
 
     # Generate LaTeX
     latex_lines = []
     latex_lines.append(r"\begin{table}[H]")
     latex_lines.append(r"\centering")
     latex_lines.append(r"\resizebox{\linewidth}{!}{")
-    latex_lines.append(r"\begin{tabular}{lrrr}")
+
+    # Dynamic columns: Linguistic Phenomenon + Model Names
+    # We don't have a single delta anymore, maybe just list them all?
+    # Or keep it simple.
+
+    model_names = [c for c in df_merged.columns if c != "category"]
+    col_def = "l" + "r" * len(model_names)
+
+    latex_lines.append(f"\\begin{{tabular}}{{{col_def}}}")
     latex_lines.append(r"\toprule")
-    latex_lines.append(
-        r"\textbf{Linguistic Phenomenon} & \textbf{MFT-Random} & \textbf{Tabi-Random} & \textbf{$\Delta$} \\"
-    )
+
+    header = " & ".join([r"\textbf{" + m + "}" for m in model_names])
+    latex_lines.append(r"\textbf{Linguistic Phenomenon} & " + header + r" \\")
     latex_lines.append(r"\midrule")
 
     for _, row in df_merged.iterrows():
-        cat = row["category"].replace("_", " ").title()
-        mft = row["MFT"]
-        tabi = row["Tabi"]
-        diff = row["Diff"]
+        cat = str(row["category"]).replace("_", " ").title()
 
-        # Bold winner
-        mft_str = f"{mft:.1%}".replace("%", r"\%")
-        tabi_str = f"{tabi:.1%}".replace("%", r"\%")
+        row_str = f"{cat}"
 
-        if mft > tabi:
-            mft_str = f"\\textbf{{{mft_str}}}"
-        elif tabi > mft:
-            tabi_str = f"\\textbf{{{tabi_str}}}"
+        # Find max score for bolding
+        scores = [row[m] for m in model_names if pd.notna(row[m])]
+        max_score = max(scores) if scores else -1
 
-        diff_str = f"{diff:+.1%}".replace("%", r"\%")
+        for m in model_names:
+            val = row[m]
+            if pd.isna(val):
+                row_str += " & -"
+            else:
+                s_str = f"{val:.1%}".replace("%", r"\%")
+                if val == max_score:
+                    s_str = f"\\textbf{{{s_str}}}"
+                row_str += f" & {s_str}"
 
-        latex_lines.append(f"{cat} & {mft_str} & {tabi_str} & {diff_str} \\\\")
+        latex_lines.append(row_str + r" \\")
 
     latex_lines.append(r"\bottomrule")
     latex_lines.append(r"\end{tabular}")
     latex_lines.append(r"}")
     latex_lines.append(
-        r"\caption{Detailed TurBLiMP sensitivity scores (accuracy on minimal pairs) verifying linguistic alignment advantages of MFT.}"
+        r"\caption{Detailed TurBLiMP sensitivity scores comparison across all models.}"
     )
     latex_lines.append(r"\label{tab:turblimp_detailed}")
     latex_lines.append(r"\end{table}")

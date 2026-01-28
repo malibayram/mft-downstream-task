@@ -251,35 +251,57 @@ def generate_charts(model_data):
 
 
 def generate_latex_table(model_data):
-    """Generate detailed LaTeX table comparing MFT vs Tabi per task."""
+    """Generate detailed LaTeX table comparing all models per task."""
     output_file = "mteb_detailed_table.tex"
 
-    # Identify models
-    mft_model = next(
-        (m for m in model_data if "mft" in m.lower() and "random" in m.lower()), None
-    )
-    tabi_model = next(
-        (m for m in model_data if "tabi" in m.lower() and "random" in m.lower()), None
-    )
-
-    if not mft_model or not tabi_model:
-        print("Could not find both MFT and Tabi random models for table generation.")
+    if not model_data:
         return
 
-    mft_tasks = {t["task_name"]: t["score"] for t in model_data[mft_model]["tasks"]}
-    tabi_tasks = {t["task_name"]: t["score"] for t in model_data[tabi_model]["tasks"]}
+    # Identify models
+    # We want MFT first, then others sorted alphabetically
+    all_models = sorted(model_data.keys())
+    mft_keys = [m for m in all_models if "mft" in m.lower()]
+    other_keys = [m for m in all_models if "mft" not in m.lower()]
 
-    common_tasks = sorted(list(set(mft_tasks.keys()) & set(tabi_tasks.keys())))
+    sorted_keys = mft_keys + other_keys
+
+    # Shorten headers
+    headers = []
+    for k in sorted_keys:
+        if "mft" in k.lower():
+            headers.append("MFT")
+        elif "tabi" in k.lower():
+            headers.append("Tabi")
+        elif "cosmos" in k.lower():
+            headers.append("Cosmos")
+        elif "mursit" in k.lower():
+            headers.append("Mursit")
+        else:
+            headers.append(k[:6])
+
+    # Collect all tasks
+    all_tasks = set()
+    for m in model_data.values():
+        for t in m["tasks"]:
+            all_tasks.add(t["task_name"])
+
+    common_tasks = sorted(list(all_tasks))
 
     lines = []
     lines.append(r"\begin{table}[H]")
     lines.append(r"\centering")
     lines.append(r"\resizebox{\linewidth}{!}{")
-    lines.append(r"\begin{tabular}{lrrr}")
+
+    # Format: l + r * num_models
+    col_def = "l" + "r" * len(sorted_keys)
+    lines.append(f"\\begin{{tabular}}{{{col_def}}}")
     lines.append(r"\toprule")
-    lines.append(
-        r"\textbf{Task} & \textbf{MFT-Random} & \textbf{Tabi-Random} & \textbf{$\Delta$} \\"
+
+    # Header row
+    header_row = (
+        r"\textbf{Task} & " + " & ".join([f"\\textbf{{{h}}}" for h in headers]) + r" \\"
     )
+    lines.append(header_row)
     lines.append(r"\midrule")
 
     # Categories
@@ -296,34 +318,41 @@ def generate_latex_table(model_data):
         # Add category header if changed
         if cat != current_cat:
             lines.append(
-                f"\\multicolumn{{4}}{{c}}{{\\textit{{{cat}}}}} \\\\"
+                f"\\multicolumn{{{len(sorted_keys) + 1}}}{{c}}{{\\textit{{{cat}}}}} \\\\"
             )  # \midrule
             current_cat = cat
 
-        mft_score = mft_tasks[t]
-        tabi_score = tabi_tasks[t]
-        diff = mft_score - tabi_score
+        # Get scores for this task across all models
+        row_scores = []
+        for k in sorted_keys:
+            tasks = {mt["task_name"]: mt["score"] for mt in model_data[k]["tasks"]}
+            row_scores.append(tasks.get(t, -1))  # -1 if missing
 
-        mft_str = f"{mft_score:.2f}"
-        tabi_str = f"{tabi_score:.2f}"
+        max_score = max(row_scores) if row_scores else -1
 
-        if mft_score > tabi_score:
-            mft_str = f"\\textbf{{{mft_str}}}"
-        elif tabi_score > mft_score:
-            tabi_str = f"\\textbf{{{tabi_str}}}"
-
-        diff_str = f"{diff:+.2f}"
+        # Format row
+        row_strs = []
+        for s in row_scores:
+            if s < 0:
+                row_strs.append("-")
+            else:
+                s_str = f"{s:.2f}"
+                if s == max_score and max_score > 0:
+                    row_strs.append(f"\\textbf{{{s_str}}}")
+                else:
+                    row_strs.append(s_str)
 
         # Clean task name
         task_display = t.replace("_", r"\_")
 
-        lines.append(f"{task_display} & {mft_str} & {tabi_str} & {diff_str} \\\\")
+        row_content = " & ".join(row_strs)
+        lines.append(f"{task_display} & {row_content} \\\\")
 
     lines.append(r"\bottomrule")
     lines.append(r"\end{tabular}")
     lines.append(r"}")
     lines.append(
-        r"\caption{Detailed MTEB-TR performance comparison across all tasks for random-initialized models.}"
+        r"\caption{Detailed MTEB-TR performance comparison across all tasks. Best scores in bold.}"
     )
     lines.append(r"\label{tab:mteb_detailed}")
     lines.append(r"\end{table}")
@@ -454,9 +483,6 @@ def main():
             name_fmt = name
 
         table3_rows.append([name_fmt, avg_str, len(info["tasks"])])
-
-    lines.append(format_table(table3_header, table3_rows))
-    lines.append("\n")
 
     lines.append(format_table(table3_header, table3_rows))
     lines.append("\n")
