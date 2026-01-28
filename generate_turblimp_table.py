@@ -9,7 +9,7 @@ import glob
 
 
 def generate_latex_table():
-    base_dir = "turblimp_results"
+    base_dir = "TurBLiMP/turblimp_results"
 
     if not os.path.exists(base_dir):
         print(f"Directory {base_dir} not found.")
