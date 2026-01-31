@@ -3,7 +3,7 @@
 
 We propose a hybrid tokenization framework that combines linguistic knowledge with statistical subword segmentation. This approach, the \textit{Morphology-First Tokenizer} (MFT), integrates rule-based morphological analysis with a structured dictionary of roots and affixes while incorporating BPE to handle out-of-vocabulary (OOV) terms. The objective is to create a tokenization system that accurate represents linguistic structures while maintaining computational efficiency.
 
-\begin{figure}[t]
+\begin{figure}[H]
 \centering
 \resizebox{0.98\linewidth}{!}{%
 \begin{tikzpicture}[
@@ -48,7 +48,7 @@ We propose a hybrid tokenization framework that combines linguistic knowledge wi
 
 \end{tikzpicture}%
 }
-\caption{Simplified algorithmic flow of MFT: segment scan, special/case handling, morphology-first tokenization, and BPE fallback.}
+\caption{Algorithmic flow of the MFT tokenization pipeline.}
 \label{fig:flowchart}
 \end{figure}
 
@@ -60,7 +60,7 @@ We provide a Python reference implementation of the tokenizer and release the le
 
 \textbf{Affix Dictionary.} The affix inventory consists of approximately 230 grammatical morphemes (suffixes, prepositions, conjunctions). Similar to roots, we merge allomorphs that serve identical grammatical functions into shared IDs. For instance, the plural suffix \textit{-ler} and its harmonic variant \textit{-lar} are assigned a single token ID (e.g., \textsc{PL}), as are the ablative variants \textit{-den, -dan, -ten, -tan}. This abstraction reduces vocabulary redundancy while preserving the morphosyntactic signal.
 
-\textbf{Input Normalization and Special Tokens.} To ensure robustness across diverse text inputs, we implement strict normalization rules. For case handling, we introduce an \texttt{<uppercase>} token to mark capitalized words, allowing the model to process \textit{Kitap} and \textit{kitap} using the same root embedding and effectively halving the number of required surface forms. For CamelCase splitting, technical terms and code-switching often introduce CamelCase (e.g., `HTTPServer), which we split into constituent parts (`HTTP, `Server) before tokenization to improve subword coverage. For whitespace and punctuation, explicit tokens are used for spaces, tabs, and newlines, ensuring that formatting is lossless and reversible.
+\textbf{Input Normalization and Special Tokens.} To ensure robustness across diverse text inputs, we implement strict normalization rules. For case handling, we introduce an \texttt{<uppercase>} token to mark capitalized words, allowing the model to process \textit{Kitap} and \textit{kitap} using the same root embedding and effectively halving the number of required surface forms. For CamelCase splitting, technical terms and code-switching often introduce CamelCase (e.g., `HTTPServer), which we split into constituent parts (`HTTP, `Server) before tokenization to improve subword coverage. Word boundaries are marked by including a leading space in root tokens, ensuring that tokenization is lossless and reversible without a dedicated whitespace token.
 
 \textbf{Encoding Algorithm.} The encoding process (Algorithm \ref{alg:encoding}) follows a ``longest-prefix match'' strategy. For each word, the tokenizer first attempts to identify a valid root from the dictionary. If a root is found, it greedily matches the longest chain of valid suffixes.
 
@@ -95,11 +95,11 @@ We provide a Python reference implementation of the tokenizer and release the le
 \end{algorithmic}
 \end{algorithm}
 
-If the morphological analyzer fails to cover the word (i.e., no valid root+suffix combination is found), the system falls back to a BPE model. This ensures that the tokenizer remains open-vocabulary and can handle foreign entities or neologisms. The BPE model is trained on a version of the corpus where known morphological segments are masked, focusing its vocabulary (approx. 10,000 tokens) on residual stems and subwords.
+If the morphological analyzer fails to cover the word (i.e., no valid root+suffix combination is found), the system falls back to a BPE model. This ensures that the tokenizer remains open-vocabulary and can handle foreign entities or neologisms. The BPE model is trained on a version of the corpus where known morphological segments are masked, focusing its vocabulary (12,696 tokens) on residual stems and subwords.
 
 \textbf{Example.} Consider the validation sentence: ``\textit{Kalktığımızda hep birlikte yürüdük.}'' (When we stood up, we walked together.)
 
-\glossex{\texttt{<upper>} kalk-tığ-ımız-da \texttt{<space>} hep \texttt{<space>} birlik-te \texttt{<space>} yürü-dü-k .}
+\glossex{\texttt{<upper>} kalk-tığ-ımız-da \_ hep \_ birlik-te \_ yürü-dü-k .}
 {CAPS stand-NMZ-POSS.1PL-LOC \_ always \_ unity-LOC \_ walk-PST-1PL .}
 {When we stood up, we walked together.}
 {Kalktığımızda hep birlikte yürüdük.}
@@ -108,7 +108,7 @@ Here, the tokenizer correctly identifies the root \textit{kalk} (stand) and segm
 
 \textbf{Decoding Algorithm.} Decoding in MFT is non-trivial compared to standard subword tokenizers. Simple concatenation is insufficient due to the normalization of affixes. The \texttt{TurkishDecoder} module applies phonological rules to reconstruct the correct surface form. For vowel harmony, the decoder selects the appropriate vowel for a suffix based on the last vowel of the preceding unit (e.g., outputting \textit{-lar} after \textit{çocuk} but \textit{-ler} after \textit{ev}). For consonant assimilation, suffixes starting with dynamic consonants (e.g., $d/t$ in \textit{-da/-ta}) are adjusted based on whether the preceding sound is voiced or voiceless.
 
-\textbf{Example.} \glossex{\texttt{<upper>} kitap \texttt{<space>} okuma-yı \texttt{<space>} sev-iyor-um .}
+\textbf{Example.} \glossex{\texttt{<upper>} kitap \_ okuma-yı \_ sev-iyor-um .}
 {CAPS book \_ reading-ACC \_ love-PROG-1SG .}
 {I like reading books.}
 {Kitap okumayı seviyorum.}
